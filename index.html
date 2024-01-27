@@ -1,1306 +1,186 @@
-<!DOCTYPE HTML>
-<html lang="en">
-
-<head>
-  <title>Quentin Dubourgdeluzençon - Data scientist &amp; illustrator</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Quentin Dubourgdeluzençon - Data scientist &amp; illustrator" />
-  <meta property="og:site_name" content="Quentin Dubourgdeluzençon" />
-  <meta property="og:title" content="Quentin Dubourgdeluzençon" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="Quentin Dubourgdeluzençon - Data scientist &amp; illustrator" />
-  <meta property="og:image"
-    content="https://quentindubourgdeluzencon.github.io/assets/images/IMG_2009_centered.JPG?v=7ece621c" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1280" />
-  <meta property="og:image:height" content="800" />
-  <meta property="og:url" content="https://quentindubourgdeluzencon.github.io" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <link rel="canonical" href="https://quentindubourgdeluzencon.github.io" />
-  <link href="https://fonts.googleapis.com/css?display=swap&family=Lato:700,700italic,400,400italic,900,900italic"
-    rel="stylesheet" type="text/css" />
-  <style>
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-    }
-
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section {
-      display: block;
-    }
-
-    body {
-      line-height: 1;
-    }
-
-    ol,
-    ul {
-      list-style: none;
-    }
-
-    blockquote,
-    q {
-      quotes: none;
-    }
-
-    blockquote:before,
-    blockquote:after,
-    q:before,
-    q:after {
-      content: '';
-      content: none;
-    }
-
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
-
-    body {
-      -webkit-text-size-adjust: none
-    }
-
-    mark {
-      background-color: transparent;
-      color: inherit
-    }
-
-    input::-moz-focus-inner {
-      border: 0;
-      padding: 0
-    }
-
-    input[type="text"],
-    input[type="email"],
-    select,
-    textarea {
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      -ms-appearance: none;
-      appearance: none
-    }
-
-    *,
-    *:before,
-    *:after {
-      box-sizing: border-box;
-    }
-
-    body {
-      line-height: 1.0;
-      min-height: var(--viewport-height);
-      min-width: 320px;
-      overflow-x: hidden;
-      word-wrap: break-word;
-    }
-
-    body:before {
-      background-attachment: scroll;
-      content: '';
-      display: block;
-      height: var(--background-height);
-      left: 0;
-      pointer-events: none;
-      position: fixed;
-      top: 0;
-      transform: scale(1);
-      width: 100vw;
-      z-index: 0;
-      background-image: linear-gradient(45deg, #a3b49f 0%, #bdeeb2 59%);
-      background-position: 0% 0%;
-      background-repeat: repeat;
-      background-size: auto;
-    }
-
-    body:after {
-      background-color: #96C0FF;
-      content: '';
-      display: block;
-      height: 100%;
-      left: 0;
-      opacity: 0;
-      position: fixed;
-      top: 0;
-      transform: scale(1);
-      transition: opacity 1s ease-in-out 0s, visibility 1s 0s;
-      visibility: hidden;
-      width: 100%;
-      z-index: 1;
-    }
-
-    body.is-loading:after {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    :root {
-      --background-height: 100vh;
-      --site-language-alignment: left;
-      --site-language-direction: ltr;
-      --site-language-flex-alignment: flex-start;
-      --site-language-indent-left: 1;
-      --site-language-indent-right: 0;
-      --viewport-height: 100vh;
-    }
-
-    html {
-      font-size: 18pt;
-    }
-
-    u {
-      text-decoration: underline;
-    }
-
-    strong {
-      color: inherit;
-      font-weight: bolder;
-    }
-
-    em {
-      font-style: italic;
-    }
-
-    code {
-      background-color: rgba(144, 144, 144, 0.25);
-      border-radius: 0.25em;
-      font-family: 'Lucida Console', 'Courier New', monospace;
-      font-size: 0.9em;
-      font-weight: normal;
-      letter-spacing: 0;
-      margin: 0 0.25em;
-      padding: 0.25em 0.5em;
-      text-indent: 0;
-    }
-
-    mark {
-      background-color: rgba(144, 144, 144, 0.25);
-    }
-
-    s {
-      text-decoration: line-through;
-    }
-
-    sub {
-      font-size: smaller;
-      vertical-align: sub;
-    }
-
-    sup {
-      font-size: smaller;
-      vertical-align: super;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: underline;
-      transition: color 0.25s ease;
-    }
-
-    #wrapper {
-      -webkit-overflow-scrolling: touch;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-height: var(--viewport-height);
-      overflow: hidden;
-      position: relative;
-      z-index: 2;
-    }
-
-    #main {
-      --alignment: left;
-      --flex-alignment: flex-start;
-      --indent-left: 1;
-      --indent-right: 0;
-      --border-radius-tl: 0;
-      --border-radius-tr: 0;
-      --border-radius-br: 0;
-      --border-radius-bl: 0;
-      align-items: center;
-      display: flex;
-      flex-grow: 0;
-      flex-shrink: 0;
-      justify-content: center;
-      max-width: 100%;
-      position: relative;
-      text-align: var(--alignment);
-      z-index: 1;
-      transition: opacity 1.25s ease 0s, transform 1.25s ease 0s;
-    }
-
-    #main>.inner {
-      --padding-horizontal: 3rem;
-      --padding-vertical: 3rem;
-      --spacing: 3rem;
-      --width: 66rem;
-      border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
-      max-width: 100%;
-      position: relative;
-      width: var(--width);
-      z-index: 1;
-      padding: var(--padding-vertical) var(--padding-horizontal);
-    }
-
-    #main>.inner>* {
-      margin-top: var(--spacing);
-      margin-bottom: var(--spacing);
-    }
-
-    #main>.inner> :first-child {
-      margin-top: 0 !important;
-    }
-
-    #main>.inner> :last-child {
-      margin-bottom: 0 !important;
-    }
-
-    #main>.inner>.full {
-      margin-left: calc(var(--padding-horizontal) * -1);
-      max-width: calc(100% + calc(var(--padding-horizontal) * 2) + 0.4725px);
-      width: calc(100% + calc(var(--padding-horizontal) * 2) + 0.4725px);
-    }
-
-    #main>.inner>.full:first-child {
-      border-top-left-radius: inherit;
-      border-top-right-radius: inherit;
-      margin-top: calc(var(--padding-vertical) * -1) !important;
-    }
-
-    #main>.inner>.full:last-child {
-      border-bottom-left-radius: inherit;
-      border-bottom-right-radius: inherit;
-      margin-bottom: calc(var(--padding-vertical) * -1) !important;
-    }
-
-    #main>.inner>.full.screen {
-      border-radius: 0 !important;
-      max-width: 100vw;
-      position: relative;
-      width: 100vw;
-      left: 50%;
-      margin-left: -50vw;
-      right: auto;
-    }
-
-    body.is-loading #main {
-      opacity: 0;
-      transform: scale(0.94375);
-    }
-
-    body.is-instant #main,
-    body.is-instant #main>.inner>*,
-    body.is-instant #main>.inner>section>* {
-      transition: none !important;
-    }
-
-    body.is-instant:after {
-      display: none !important;
-      transition: none !important;
-    }
-
-    h1,
-    h2,
-    h3,
-    p {
-      direction: var(--site-language-direction);
-      position: relative;
-    }
-
-    h1 span.p,
-    h2 span.p,
-    h3 span.p,
-    p span.p {
-      display: block;
-      position: relative;
-    }
-
-    h1 span[style],
-    h2 span[style],
-    h3 span[style],
-    p span[style],
-    h1 strong,
-    h2 strong,
-    h3 strong,
-    p strong,
-    h1 a,
-    h2 a,
-    h3 a,
-    p a,
-    h1 code,
-    h2 code,
-    h3 code,
-    p code,
-    h1 mark,
-    h2 mark,
-    h3 mark,
-    p mark {
-      -webkit-text-fill-color: currentcolor;
-    }
-
-    #text02 {
-      color: #FFFFFF;
-      font-family: 'Lato', sans-serif;
-      letter-spacing: -0.125rem;
-      width: 100%;
-      font-size: 3em;
-      line-height: 1;
-      font-weight: 700;
-    }
-
-    #text02 a {
-      text-decoration: underline;
-    }
-
-    #text02 a:hover {
-      text-decoration: none;
-    }
-
-    #text02 span.p:nth-child(n + 2) {
-      margin-top: 1rem;
-    }
-
-    #text03 {
-      text-align: left;
-      color: #FFFFFF;
-      font-family: 'Lato', sans-serif;
-      font-size: 1em;
-      line-height: 1.75;
-      font-weight: 400;
-    }
-
-    #text03 a {
-      text-decoration: underline;
-    }
-
-    #text03 a:hover {
-      text-decoration: none;
-    }
-
-    #text03 span.p:nth-child(n + 2) {
-      margin-top: 1rem;
-    }
-
-    #text06 {
-      color: #FFFFFF;
-      font-family: 'Lato', sans-serif;
-      font-size: 1em;
-      line-height: 1.75;
-      font-weight: 400;
-    }
-
-    #text06 a {
-      text-decoration: underline;
-    }
-
-    #text06 a:hover {
-      text-decoration: none;
-    }
-
-    #text06 span.p:nth-child(n + 2) {
-      margin-top: 1rem;
-    }
-
-    #text04 {
-      color: #FFFFFF;
-      font-family: 'Lato', sans-serif;
-      font-size: 1em;
-      line-height: 1.75;
-      font-weight: 400;
-    }
-
-    #text04 a {
-      text-decoration: underline;
-    }
-
-    #text04 a:hover {
-      text-decoration: none;
-    }
-
-    #text04 span.p:nth-child(n + 2) {
-      margin-top: 1rem;
-    }
-
-    #text05 {
-      color: #FFFFFF;
-      font-family: 'Lato', sans-serif;
-      font-size: 1em;
-      line-height: 1.75;
-      font-weight: 400;
-    }
-
-    #text05 a {
-      text-decoration: underline;
-    }
-
-    #text05 a:hover {
-      text-decoration: none;
-    }
-
-    #text05 span.p:nth-child(n + 2) {
-      margin-top: 1rem;
-    }
-
-    #text01 {
-      color: #FFFFFF;
-      font-family: 'Lato', sans-serif;
-      font-size: 1em;
-      line-height: 1.75;
-      font-weight: 400;
-    }
-
-    #text01 a {
-      text-decoration: underline;
-    }
-
-    #text01 a:hover {
-      text-decoration: none;
-    }
-
-    #text01 span.p:nth-child(n + 2) {
-      margin-top: 1rem;
-    }
-
-    .icons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: var(--flex-alignment);
-      letter-spacing: 0;
-      padding: 0;
-    }
-
-    .icons li {
-      position: relative;
-      z-index: 1;
-    }
-
-    .icons li a {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-    }
-
-    .icons li a svg {
-      display: block;
-      position: relative;
-    }
-
-    .icons li a+svg {
-      display: block;
-      height: 100%;
-      left: 0;
-      pointer-events: none;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: -1;
-    }
-
-    .icons li a .label {
-      display: none;
-    }
-
-    #icons01 {
-      font-size: 1.5em;
-      gap: 1rem;
-    }
-
-    #icons01:not(:first-child) {
-      margin-top: 2.25rem !important;
-    }
-
-    #icons01:not(:last-child) {
-      margin-bottom: 2.25rem !important;
-    }
-
-    #icons01 li a {
-      border-radius: 100%;
-      height: 2em;
-      width: 2em;
-      transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-    }
-
-    #icons01 li a svg {
-      height: 60%;
-      width: 60%;
-      transition: fill 0.25s ease;
-    }
-
-    #icons01 a svg {
-      fill: #FCFCFC;
-    }
-
-    #icons01 a {
-      border: solid 1px #FFFFFF;
-    }
-
-    #icons01 a:hover {
-      border-color: #8795E6 !important;
-    }
-
-    #icons01 a:hover svg {
-      fill: #8795E6 !important;
-    }
-
-    #icons01 li a+svg {
-      transition: fill 0.25s ease, stroke 0.25s ease;
-    }
-
-    .image {
-      display: block;
-      line-height: 0;
-      max-width: 100%;
-      position: relative;
-    }
-
-    .image .frame {
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      display: inline-block;
-      max-width: 100%;
-      overflow: hidden;
-      vertical-align: top;
-      width: 100%;
-    }
-
-    .image .frame img {
-      border-radius: 0 !important;
-      max-width: 100%;
-      vertical-align: top;
-      width: inherit;
-    }
-
-    .image.full .frame {
-      display: block;
-    }
-
-    .image.full:first-child .frame {
-      border-top-left-radius: inherit;
-      border-top-right-radius: inherit;
-    }
-
-    .image.full:last-child .frame {
-      border-bottom-left-radius: inherit;
-      border-bottom-right-radius: inherit;
-    }
-
-    #image01 .frame {
-      width: 100vw;
-      transition: none;
-    }
-
-    #image01 img {
-      height: 100% !important;
-      object-fit: cover;
-      object-position: top;
-      width: 100% !important;
-    }
-
-    #image01 .frame img {
-      transition: none;
-    }
-
-    .container {
-      position: relative;
-    }
-
-    .container>.wrapper {
-      vertical-align: top;
-      position: relative;
-      max-width: 100%;
-      border-radius: inherit;
-    }
-
-    .container>.wrapper>.inner {
-      vertical-align: top;
-      position: relative;
-      max-width: 100%;
-      border-radius: inherit;
-      text-align: var(--alignment);
-    }
-
-    #main .container.full:first-child>.wrapper {
-      border-top-left-radius: inherit;
-      border-top-right-radius: inherit;
-    }
-
-    #main .container.full:last-child>.wrapper {
-      border-bottom-left-radius: inherit;
-      border-bottom-right-radius: inherit;
-    }
-
-    #main .container.full:first-child>.wrapper>.inner {
-      border-top-left-radius: inherit;
-      border-top-right-radius: inherit;
-    }
-
-    #main .container.full:last-child>.wrapper>.inner {
-      border-bottom-left-radius: inherit;
-      border-bottom-right-radius: inherit;
-    }
-
-    #container01 {
-      display: flex;
-      width: 100%;
-      min-height: 24rem;
-      align-items: center;
-      justify-content: center;
-      background-image: linear-gradient(45deg, #0F0D0D 13%, rgba(0, 0, 0, 0.761) 45%);
-      background-position: 0% 0%;
-      background-repeat: repeat;
-      background-size: cover;
-      box-shadow: 0rem 1.375rem 5rem 2rem rgba(0, 0, 0, 0.251);
-      border-radius: 1rem;
-    }
-
-    #container01>.wrapper>.inner {
-      --gutters: 8rem;
-      --padding-horizontal: 4rem;
-      --padding-vertical: 4rem;
-      --spacing: 1.75rem;
-      padding: var(--padding-vertical) var(--padding-horizontal);
-    }
-
-    #container01>.wrapper {
-      max-width: var(--width);
-      width: 100%;
-    }
-
-    #container01.default>.wrapper>.inner>* {
-      margin-bottom: var(--spacing);
-      margin-top: var(--spacing);
-    }
-
-    #container01.default>.wrapper>.inner>*:first-child {
-      margin-top: 0 !important;
-    }
-
-    #container01.default>.wrapper>.inner>*:last-child {
-      margin-bottom: 0 !important;
-    }
-
-    #container01.columns>.wrapper>.inner {
-      flex-wrap: wrap;
-      display: flex;
-      align-items: center;
-    }
-
-    #container01.columns>.wrapper>.inner>* {
-      flex-grow: 0;
-      flex-shrink: 0;
-      max-width: 100%;
-      text-align: var(--alignment);
-      padding: 0 0 0 var(--gutters);
-    }
-
-    #container01.columns>.wrapper>.inner>*>* {
-      margin-bottom: var(--spacing);
-      margin-top: var(--spacing);
-    }
-
-    #container01.columns>.wrapper>.inner>*>*:first-child {
-      margin-top: 0 !important;
-    }
-
-    #container01.columns>.wrapper>.inner>*>*:last-child {
-      margin-bottom: 0 !important;
-    }
-
-    #container01.columns>.wrapper>.inner>*:first-child {
-      margin-left: calc(var(--gutters) * -1);
-    }
-
-    #container01.default>.wrapper>.inner>.full {
-      margin-left: calc(var(--padding-horizontal) * -1);
-      max-width: none !important;
-      width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-    }
-
-    #container01.default>.wrapper>.inner>.full:first-child {
-      margin-top: calc(var(--padding-vertical) * -1) !important;
-      border-top-left-radius: inherit;
-      border-top-right-radius: inherit;
-    }
-
-    #container01.default>.wrapper>.inner>.full:last-child {
-      margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      border-bottom-left-radius: inherit;
-      border-bottom-right-radius: inherit;
-    }
-
-    #container01.columns>.wrapper>.inner>div>.full {
-      margin-left: calc(var(--gutters) * -0.5);
-      max-width: none !important;
-      width: calc(100% + var(--gutters) + 0.4725px);
-    }
-
-    #container01.columns>.wrapper>.inner>div:first-child>.full {
-      margin-left: calc(var(--padding-horizontal) * -1);
-      width: calc(100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) + 0.4725px);
-    }
-
-    #container01.columns>.wrapper>.inner>div:last-child>.full {
-      width: calc(100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) + 0.4725px);
-    }
-
-    #container01.columns>.wrapper>.inner>div>.full:first-child {
-      margin-top: calc(var(--padding-vertical) * -1) !important;
-    }
-
-    #container01.columns>.wrapper>.inner>div>.full:last-child {
-      margin-bottom: calc(var(--padding-vertical) * -1) !important;
-    }
-
-    #container01.columns>.wrapper>.inner>.full {
-      align-self: stretch;
-      min-height: 24rem;
-    }
-
-    #container01.columns>.wrapper>.inner>.full:first-child {
-      border-bottom-left-radius: inherit;
-      border-top-left-radius: inherit;
-    }
-
-    #container01.columns>.wrapper>.inner>.full:last-child {
-      border-bottom-right-radius: inherit;
-      border-top-right-radius: inherit;
-    }
-
-    #container01.columns>.wrapper>.inner>.full>.full:first-child:last-child {
-      border-radius: inherit;
-      height: calc(100% + (var(--padding-vertical) * 2));
-    }
-
-    #container01.columns>.wrapper>.inner>.full>.full:first-child:last-child>* {
-      border-radius: inherit;
-      height: 100%;
-      position: absolute;
-      width: 100%;
-    }
-
-    #container01>.wrapper>.inner> :nth-child(1) {
-      width: calc(40% + (var(--gutters) / 2));
-    }
-
-    #container01>.wrapper>.inner> :nth-child(2) {
-      width: calc(60% + (var(--gutters) / 2));
-    }
-
-    @media (max-width: 1920px) {}
-
-    @media (max-width: 1680px) {
-      html {
-        font-size: 13pt;
-      }
-    }
-
-    @media (max-width: 1280px) {
-      html {
-        font-size: 13pt;
-      }
-    }
-
-    @media (max-width: 1024px) { 
-      #text02 {
-      font-size: 2em;
-    }
-}
-
-    @media (max-width: 980px) {
-      html {
-        font-size: 11pt;
-      }
-
-      #container01.columns>.wrapper>.inner {
-        flex-direction: column !important;
-        flex-wrap: nowrap !important;
-      }
-
-      #container01.columns>.wrapper>.inner>span {
-        height: 0;
-        margin-top: calc(var(--gutters) * -1);
-        pointer-events: none;
-        visibility: hidden;
-      }
-
-      #container01.columns>.wrapper>.inner>*:first-child {
-        margin-left: 0 !important;
-        padding-top: 0 !important;
-      }
-
-      #container01.columns>.wrapper>.inner>* {
-        padding: calc(var(--gutters) * 0.5) 0 !important;
-      }
-
-      #container01.columns>.wrapper>.inner>*:last-child {
-        padding-bottom: 0 !important;
-      }
-
-      #container01.columns>.wrapper>.inner>div>.full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-
-      #container01.columns>.wrapper>.inner>div:first-of-type>.full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-
-      #container01.columns>.wrapper>.inner>div:last-of-type>.full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-
-      #container01.columns>.wrapper>.inner>div>.full:first-child {
-        margin-top: calc(var(--gutters) * -0.5) !important;
-      }
-
-      #container01.columns>.wrapper>.inner>div>.full:last-child {
-        margin-bottom: calc(var(--gutters) * -0.5) !important;
-      }
-
-      #container01.columns>.wrapper>.inner>div:first-of-type>.full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-
-      #container01.columns>.wrapper>.inner>div:last-of-type>.full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-
-      #container01.columns>.wrapper>.inner>div:first-of-type,
-      #container01.columns>.wrapper>.inner>div:first-of-type>.full:first-child {
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-
-      #container01.columns>.wrapper>.inner>div:last-of-type,
-      #container01.columns>.wrapper>.inner>div:last-of-type>.full:last-child {
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-
-      #container01.columns>.wrapper>.inner>div:first-of-type,
-      #container01.columns>.wrapper>.inner>div:first-of-type>.full:last-child {
-        border-bottom-left-radius: 0 !important;
-      }
-
-      #container01.columns>.wrapper>.inner>div:last-of-type,
-      #container01.columns>.wrapper>.inner>div:last-of-type>.full:first-child {
-        border-top-right-radius: 0 !important;
-      }
-
-      #container01.columns>.wrapper>.inner>.full>.full:first-child:last-child {
-        height: auto;
-      }
-
-      #container01.columns>.wrapper>.inner>.full>.full:first-child:last-child>* {
-        height: auto;
-        position: relative;
-        width: auto;
-      }
-
-      /* image reduction */
-      /* #container01.columns>.wrapper>.inner>.full>.full:first-child:last-child.image img {
-        max-height: 50rem;
-      } */
-
-      #container01.columns>.wrapper>.inner>.full>.full:first-child:last-child.slideshow .bg {
-        min-height: 35rem;
-      }
-
-      #container01>.wrapper>.inner> :nth-child(1) {
-        min-height: 100% !important;
-        width: 100% !important;
-      }
-
-      #container01>.wrapper>.inner> :nth-child(2) {
-        min-height: 100% !important;
-        width: 100% !important;
-      }
-    }
-
-    @media (max-width: 736px) {
-      html {
-        font-size: 11pt;
-      }
-
-      #main>.inner {
-        --padding-horizontal: 1rem;
-        --padding-vertical: 1rem;
-        --spacing: 3rem;
-      }
-
-      #text02 {
-        letter-spacing: -0.109375rem;
-        width: 100%;
-        font-size: 3em;
-        line-height: 1.125;
-      }
-
-      #text03 {
-        letter-spacing: 0rem;
-        width: 100%;
-        font-size: 1em;
-        line-height: 1.75;
-      }
-
-      #text06 {
-        letter-spacing: 0rem;
-        width: 100%;
-        font-size: 1em;
-        line-height: 1.75;
-      }
-
-      #text04 {
-        letter-spacing: 0rem;
-        width: 100%;
-        font-size: 1em;
-        line-height: 1.75;
-      }
-
-      #text05 {
-        letter-spacing: 0rem;
-        width: 100%;
-        font-size: 1em;
-        line-height: 1.75;
-      }
-
-      #text01 {
-        letter-spacing: 0rem;
-        width: 100%;
-        font-size: 1em;
-        line-height: 1.75;
-      }
-
-      #icons01 {
-        font-size: 1.5em;
-        gap: 1rem;
-      }
-
-      #icons01:not(:first-child) {
-        margin-top: 1.6875rem !important;
-      }
-
-      #icons01:not(:last-child) {
-        margin-bottom: 1.6875rem !important;
-      }
-
-      /* image reduction */
-      /* #image01 .frame {
-        height: 25rem !important;
-      } */
-
-      #image01 img {
-        height: 100% !important;
-        object-fit: cover;
-        object-position: top;
-        width: 100% !important;
-      }
-
-      #container01>.wrapper>.inner {
-        --gutters: 8rem;
-        --padding-horizontal: 2.5rem;
-        --padding-vertical: 4rem;
-        --spacing: 1.75rem;
-      }
-
-      #container01 {
-        min-height: 18rem;
-      }
-
-      #container01.columns>.wrapper>.inner>* {
-        padding: calc(var(--gutters) * 0.5) 0 !important;
-      }
-
-      #container01.columns>.wrapper>.inner>.full {
-        min-height: 18rem;
-      }
-
-      #container01.columns>.wrapper>.inner>.full>.full:first-child:last-child.image img {
-        max-height: none;
-      }
-
-      #container01.columns>.wrapper>.inner>.full>.full:first-child:last-child.slideshow .bg {
-        min-height: auto;
-      }
-    }
-
-    @media (max-width: 480px) {
-
-      #text02 {
-      font-size: 2em;
-    }
-
-      #main>.inner {
-        --spacing: 2.625rem;
-      }
-
-      /* image reduction */
-      /* #image01 .frame {
-        height: 20rem !important;
-      } */
-
-      #container01>.wrapper>.inner {
-        --spacing: 1.53125rem;
-      }
-    }
-
-    @media (max-width: 360px) {
-      #main>.inner {
-        --padding-horizontal: 0.75rem;
-        --padding-vertical: 0.75rem;
-        --spacing: 2.25rem;
-      }
-
-      #text02 {
-        font-size: 2em;
-      }
-
-      #text03 {
-        font-size: 1em;
-      }
-
-      #text06 {
-        font-size: 1em;
-      }
-
-      #text04 {
-        font-size: 1em;
-      }
-
-      #text05 {
-        font-size: 1em;
-      }
-
-      #text01 {
-        font-size: 1em;
-      }
-
-      #icons01 {
-        gap: 0.75rem;
-      }
-
-      /* image reduction */
-      /* #image01 .frame {
-        height: 17.5rem !important;
-      } */
-
-      #container01>.wrapper>.inner {
-        --gutters: 8rem;
-        --padding-horizontal: 1.875rem;
-        --padding-vertical: 3rem;
-        --spacing: 1.3125rem;
-      }
-
-      #container01 {
-        min-height: 12rem;
-      }
-
-      #container01.columns>.wrapper>.inner>.full {
-        min-height: 12rem;
-      }
-    }
-  </style><noscript>
-    <style>
-      body {
-        overflow: auto !important;
-      }
-
-      body:after {
-        display: none !important;
-      }
-
-      #main>.inner {
-        opacity: 1.0 !important;
-      }
-
-      #main {
-        opacity: 1.0 !important;
-        transform: none !important;
-        transition: none !important;
-        filter: none !important;
-      }
-    </style>
-  </noscript>
-</head>
-
-<body class="is-loading"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" display="none" width="0" height="0">
-    <symbol id="icon-0c4db87eff374f0f1ef47f8f043f0132" viewBox="0 0 40 40">
-      <path
-        d="M36.3,10.2c-1,1.3-2.1,2.5-3.4,3.5c0,0.2,0,0.4,0,1c0,1.7-0.2,3.6-0.9,5.3c-0.6,1.7-1.2,3.5-2.4,5.1 c-1.1,1.5-2.3,3.1-3.7,4.3c-1.4,1.2-3.3,2.3-5.3,3c-2.1,0.8-4.2,1.2-6.6,1.2c-3.6,0-7-1-10.2-3c0.4,0,1.1,0.1,1.5,0.1 c3.1,0,5.9-1,8.2-2.9c-1.4,0-2.7-0.4-3.8-1.3c-1.2-1-1.9-2-2.2-3.3c0.4,0.1,1,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-1.4-0.3-2.7-1.1-3.7-2.3s-1.4-2.6-1.4-4.2v-0.1c1,0.6,2,0.9,3,0.9c-1-0.6-1.5-1.3-2.2-2.4c-0.6-1-0.9-2.1-0.9-3.3s0.3-2.3,1-3.4 c1.5,2.1,3.6,3.6,6,4.9s4.9,2,7.6,2.1c-0.1-0.6-0.1-1.1-0.1-1.4c0-1.8,0.8-3.5,2-4.7c1.2-1.2,2.9-2,4.7-2c2,0,3.6,0.8,4.8,2.1 c1.4-0.3,2.9-0.9,4.2-1.5c-0.4,1.5-1.4,2.7-2.9,3.6C33.8,11.2,35.1,10.9,36.3,10.2L36.3,10.2z" />
-    </symbol>
-    <symbol id="icon-c3c8e1063e3b7f84f6b54712741de139" viewBox="0 0 40 40">
-      <path
-        d="M37.3,15.3v15.3c0,0.8-0.3,1.6-0.9,2.2c-0.6,0.6-1.4,0.9-2.2,0.9H5.8c-0.8,0-1.6-0.3-2.2-0.9s-0.9-1.4-0.9-2.2V15.3 c0.5,0.6,1.2,1.1,2,1.7c4.7,3.1,7.9,5.4,9.6,6.7c0.7,0.5,1.4,0.9,1.8,1.2c0.4,0.3,1,0.6,1.9,0.9c0.7,0.3,1.5,0.5,2.1,0.5l0,0 c0.6,0,1.4-0.2,2.1-0.5c0.7-0.3,1.4-0.6,1.9-0.9c0.4-0.3,1-0.7,1.8-1.2c2.2-1.6,5.4-3.8,9.6-6.7C36.1,16.5,36.7,15.9,37.3,15.3 L37.3,15.3z M37.3,9.6c0,1-0.3,2-0.9,2.9c-0.6,0.9-1.5,1.8-2.4,2.4c-4.9,3.3-7.9,5.4-9,6.2c-0.1,0.1-0.4,0.3-0.8,0.6 c-0.4,0.3-0.7,0.5-1,0.7c-0.3,0.2-0.6,0.4-1,0.6c-0.4,0.2-0.7,0.4-1.1,0.5c-0.4,0.1-0.6,0.2-0.9,0.2l0,0c-0.3,0-0.6-0.1-0.9-0.2 c-0.3-0.1-0.7-0.3-1.1-0.5c-0.4-0.2-0.7-0.4-1-0.6c-0.3-0.2-0.6-0.4-1-0.7c-0.4-0.3-0.7-0.5-0.8-0.6c-1.1-0.8-2.8-2-5.1-3.5 c-2.3-1.6-3.3-2.4-3.7-2.7c-0.8-0.5-1.6-1.2-2.3-2.2s-1-1.9-1-2.6c0-1,0.3-1.9,0.8-2.5c0.5-0.6,1.2-1,2.3-1h28.4 c0.8,0,1.6,0.3,2.2,0.9C37.1,8.1,37.3,8.8,37.3,9.6L37.3,9.6z" />
-    </symbol>
-    <symbol id="icon-7ba57a956e94fa64bf7f65dd78b6b627" viewBox="0 0 40 40">
-      <path
-        d="M22.6,20c0,6.3-5.1,11.4-11.3,11.4S0,26.3,0,20S5.1,8.6,11.3,8.6S22.6,13.7,22.6,20 M34.9,20c0,5.9-2.5,10.7-5.6,10.7 c-3.1,0-5.6-4.8-5.6-10.7s2.5-10.7,5.6-10.7C32.4,9.3,34.9,14.1,34.9,20 M40,20c0,5.3-0.9,9.6-2,9.6s-2-4.3-2-9.6s0.9-9.6,2-9.6 S40,14.7,40,20" />
-    </symbol>
-    <symbol id="icon-instagram" viewBox="0 0 16 16">
-      <path
-        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-    </symbol>
-
-    <symbol id="icon-bf393d6ea48a4e69e1ed58a3563b94a5" viewBox="0 0 40 40">
-      <path
-        d="M12.1,13.8v19.1H5.7V13.8C5.7,13.8,12.1,13.8,12.1,13.8z M12.5,7.9c0,0.9-0.3,1.7-1,2.4c-0.7,0.6-1.5,0.9-2.6,0.9h0 c-1.1,0-1.9-0.3-2.5-0.9c-0.6-0.6-1-1.4-1-2.4c0-1,0.3-1.7,1-2.4S7.9,4.6,9,4.6s1.9,0.3,2.6,0.9S12.5,6.9,12.5,7.9z M35,22v11h-6.4 V22.7c0-1.4-0.3-2.4-0.8-3.2c-0.5-0.8-1.3-1.1-2.4-1.1c-0.8,0-1.5,0.2-2,0.7c-0.5,0.4-1,1-1.2,1.7c-0.1,0.4-0.2,0.9-0.2,1.6v10.7 h-6.4c0-5.1,0-9.3,0-12.5s0-5.1,0-5.7l0-0.9H22v2.8h0c0.3-0.4,0.5-0.8,0.8-1.1c0.3-0.3,0.6-0.6,1.1-1c0.5-0.4,1-0.6,1.7-0.8 c0.7-0.2,1.4-0.3,2.2-0.3c2.2,0,4,0.7,5.3,2.2C34.4,17,35,19.1,35,22L35,22z" />
-    </symbol>
-  </svg>
-  <div id="wrapper">
-    <div id="main">
-      <div class="inner">
-        <div id="container01" class="container columns">
-          <div class="wrapper">
-            <div class="inner">
-              <div class="full">
-                <div id="image01" class="image full" data-position="top"><span class="frame"><img
-                      src="assets/images/IMG_2009_centered.JPG?v=7ece621c" alt="Photo Quentin Dubourgdeluzençon" /></span></div>
-              </div>
-              <div>
-                <h1 id="text02">Quentin Dubourgdeluzençon</h1>
-                <p id="text03">Hi, I&#039;m <strong>Quentin</strong>! <br />As an <strong>AI engineer</strong> I use data and Machine Learning to address buisness challenges. 
-                  During my spare time, I illustrate comics and craft animations.</p>
-                <p id="text04"><span class="p"><strong>Currently</strong>:<br /> 🔥 <a href='https://www.malt.fr/profile/quentindubourg'>Freelance</a> AI engineer</span></p>
-                <p id="text04"><span class="p"><strong>Previously</strong>:<br /> ✅ Data manager @ <a
-                  href="https://borneoapp.com/">Borneo</a><br /> ✅ Senior data scientist @ <a
-                  href="https://winamax.com/">Winamax</a><br /> ✅ Data engineer @ <a
-                  href="https://ekimetrics.com/">Ekimetrics</a></span></p>
-                <p id="text06"><span class="p"><strong>Illustrations &amp; animations:</strong><br /> ✏️ <a
-                      href="https://www.federation-maginot.com/andre-maginot-un-patriote-exemplaire/">André Maginot,
-                      patriote exemplaire</a><br /> ✏️ <a href="https://www.petitapetit.fr/produit/le-havre-tome-3/"> Le
-                      Havre Tome 3 - La grande histoire des quartiers</a><br /> 🎥 <a
-                      href="https://www.youtube.com/watch?v=gKoMB5rUKcs"> Doni M - Seum du futur</a><br /> 🎥 <a
-                      href="https://youtu.be/DX6JR5TGCO4"> Felito - 250</a><br /> 🎥 <a
-                      href="https://youtu.be/jl9SOA9FfsQ"> Cesar - Insouciant
-                    </a></span></p>
-
-
-                    <p id="text06"><span class="p"><strong>CV</strong>:<br />🇫🇷 <a
-                      href="https://quentindubourgdeluzencon.github.io/assets/CV/CV-FR-QUENTIN-DUBOURG.pdf">French version</a><br />🇬🇧 <a
-                      href="https://quentindubourgdeluzencon.github.io/assets/CV/CV-EN-QUENTIN-DUBOURG.pdf">English version</a></span></p>
-
-
-                <p id="text01"><strong>Get in touch with me:</strong></p>
-                <ul id="icons01" class="container icons">
-                  <li><a class="n02" href="https://instagram.com/vasydewey" aria-label="Instagram"><svg>
-                        <use xlink:href="#icon-instagram"></use>
-                      </svg><span class="label">Email</span></a></li>
-                  <li><a class="n02" href="mailto:quentin.dubourgdeluzencon@gmail.com" aria-label="Email"><svg>
-                        <use xlink:href="#icon-c3c8e1063e3b7f84f6b54712741de139"></use>
-                      </svg><span class="label">Email</span></a></li>
-                  <li><a class="n03" href="https://medium.com/@quentin.dubourgdeluzencon" aria-label="Medium"><svg>
-                        <use xlink:href="#icon-7ba57a956e94fa64bf7f65dd78b6b627"></use>
-                      </svg><span class="label">Medium</span></a></li>
-                  <li><a class="n04" href="https://www.linkedin.com/in/quentin-dubourg-67888a174/"
-                      aria-label="LinkedIn"><svg>
-                        <use xlink:href="#icon-bf393d6ea48a4e69e1ed58a3563b94a5"></use>
-                      </svg><span class="label">LinkedIn</span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+<div class="Desktop1" style="width: 1440px; height: 6188px; position: relative; background: white">
+  <div class="Navbar" style="width: 1120.54px; height: 116px; left: 160px; top: 96px; position: absolute">
+    <div class="Contact" style="width: 85.53px; left: 1035px; top: 45px; position: absolute; color: #242424; font-size: 24px; font-family: Archivo; font-weight: 400; word-wrap: break-word">Contact</div>
+    <div class="NosAlbums" style="width: 128.81px; left: 830px; top: 45px; position: absolute; color: #242424; font-size: 24px; font-family: Archivo; font-weight: 400; word-wrap: break-word">Nos albums</div>
+    <div class="Planification" style="width: 131.82px; left: 622px; top: 45px; position: absolute; color: #242424; font-size: 24px; font-family: Archivo; font-weight: 400; word-wrap: break-word">Planification</div>
+    <div class="NotreApproche" style="width: 167.04px; left: 379px; top: 45px; position: absolute; color: #242424; font-size: 24px; font-family: Archivo; font-weight: 400; word-wrap: break-word">Notre approche</div>
+    <div class="LogoCaseParCase" style="width: 171.07px; height: 116px; left: 0px; top: 0px; position: absolute">
+      <div class="Vector" style="width: 167.36px; height: 97.71px; left: 1.82px; top: 12.96px; position: absolute; background: black"></div>
+      <div class="Group60" style="width: 27.09px; height: 27.01px; left: 119.61px; top: 48.09px; position: absolute">
+        <div class="Rectangle120" style="width: 16.93px; height: 8.10px; left: 10.16px; top: 0px; position: absolute; background: #4CB232"></div>
+        <div class="Rectangle121" style="width: 16.93px; height: 8.10px; left: 0px; top: 9.45px; position: absolute; background: #4CB232"></div>
+        <div class="Rectangle122" style="width: 4.74px; height: 8.10px; left: 0px; top: 18.91px; position: absolute; background: #4CB232"></div>
+        <div class="Rectangle123" style="width: 10.16px; height: 8.10px; left: 16.93px; top: 18.91px; position: absolute; background: #4CB232"></div>
+        <div class="Rectangle124" style="width: 8.13px; height: 8.10px; left: 18.97px; top: 9.45px; position: absolute; background: black"></div>
+        <div class="Rectangle125" style="width: 8.13px; height: 8.10px; left: 6.77px; top: 18.91px; position: absolute; background: black"></div>
+        <div class="Rectangle126" style="width: 8.13px; height: 8.10px; left: 0px; top: 0px; position: absolute; background: black"></div>
       </div>
     </div>
   </div>
-  <script>(function () { var on = addEventListener, $ = function (q) { return document.querySelector(q) }, $$ = function (q) { return document.querySelectorAll(q) }, $body = document.body, $inner = $('.inner'), client = (function () { var o = { browser: 'other', browserVersion: 0, os: 'other', osVersion: 0, mobile: false, canUse: null, flags: { lsdUnits: false, }, }, ua = navigator.userAgent, a, i; a = [['firefox', /Firefox\/([0-9\.]+)/], ['edge', /Edge\/([0-9\.]+)/], ['safari', /Version\/([0-9\.]+).+Safari/], ['chrome', /Chrome\/([0-9\.]+)/], ['chrome', /CriOS\/([0-9\.]+)/], ['ie', /Trident\/.+rv:([0-9]+)/]]; for (i = 0; i < a.length; i++) { if (ua.match(a[i][1])) { o.browser = a[i][0]; o.browserVersion = parseFloat(RegExp.$1); break; } } a = [['ios', /([0-9_]+) like Mac OS X/, function (v) { return v.replace('_', '.').replace('_', ''); }], ['ios', /CPU like Mac OS X/, function (v) { return 0 }], ['ios', /iPad; CPU/, function (v) { return 0 }], ['android', /Android ([0-9\.]+)/, null], ['mac', /Macintosh.+Mac OS X ([0-9_]+)/, function (v) { return v.replace('_', '.').replace('_', ''); }], ['windows', /Windows NT ([0-9\.]+)/, null], ['undefined', /Undefined/, null],]; for (i = 0; i < a.length; i++) { if (ua.match(a[i][1])) { o.os = a[i][0]; o.osVersion = parseFloat(a[i][2] ? (a[i][2])(RegExp.$1) : RegExp.$1); break; } } if (o.os == 'mac' && ('ontouchstart' in window) && ((screen.width == 1024 && screen.height == 1366) || (screen.width == 834 && screen.height == 1112) || (screen.width == 810 && screen.height == 1080) || (screen.width == 768 && screen.height == 1024))) o.os = 'ios'; o.mobile = (o.os == 'android' || o.os == 'ios'); var _canUse = document.createElement('div'); o.canUse = function (property, value) { var style; style = _canUse.style; if (!(property in style)) return false; if (typeof value !== 'undefined') { style[property] = value; if (style[property] == '') return false; } return true; }; o.flags.lsdUnits = o.canUse('width', '100dvw'); return o; }()), trigger = function (t) { dispatchEvent(new Event(t)); }, cssRules = function (selectorText) { var ss = document.styleSheets, a = [], f = function (s) { var r = s.cssRules, i; for (i = 0; i < r.length; i++) { if (r[i] instanceof CSSMediaRule && matchMedia(r[i].conditionText).matches) (f)(r[i]); else if (r[i] instanceof CSSStyleRule && r[i].selectorText == selectorText) a.push(r[i]); } }, x, i; for (i = 0; i < ss.length; i++)f(ss[i]); return a; }, thisHash = function () { var h = location.hash ? location.hash.substring(1) : null, a; if (!h) return null; if (h.match(/\?/)) { a = h.split('?'); h = a[0]; history.replaceState(undefined, undefined, '#' + h); window.location.search = a[1]; } if (h.length > 0 && !h.match(/^[a-zA-Z]/)) h = 'x' + h; if (typeof h == 'string') h = h.toLowerCase(); return h; }, scrollToElement = function (e, style, duration) { var y, cy, dy, start, easing, offset, f; if (!e) y = 0; else { offset = (e.dataset.scrollOffset ? parseInt(e.dataset.scrollOffset) : 0) * parseFloat(getComputedStyle(document.documentElement).fontSize); switch (e.dataset.scrollBehavior ? e.dataset.scrollBehavior : 'default') { case 'default': default: y = e.offsetTop + offset; break; case 'center': if (e.offsetHeight < window.innerHeight) y = e.offsetTop - ((window.innerHeight - e.offsetHeight) / 2) + offset; else y = e.offsetTop - offset; break; case 'previous': if (e.previousElementSibling) y = e.previousElementSibling.offsetTop + e.previousElementSibling.offsetHeight + offset; else y = e.offsetTop + offset; break; } } if (!style) style = 'smooth'; if (!duration) duration = 750; if (style == 'instant') { window.scrollTo(0, y); return; } start = Date.now(); cy = window.scrollY; dy = y - cy; switch (style) { case 'linear': easing = function (t) { return t }; break; case 'smooth': easing = function (t) { return t < .5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1 }; break; }f = function () { var t = Date.now() - start; if (t >= duration) window.scroll(0, y); else { window.scroll(0, cy + (dy * easing(t / duration))); requestAnimationFrame(f); } }; f(); }, scrollToTop = function () { scrollToElement(null); }, loadElements = function (parent) { var a, e, x, i; a = parent.querySelectorAll('iframe[data-src]:not([data-src=""])'); for (i = 0; i < a.length; i++) { a[i].contentWindow.location.replace(a[i].dataset.src); a[i].dataset.initialSrc = a[i].dataset.src; a[i].dataset.src = ''; } a = parent.querySelectorAll('video[autoplay]'); for (i = 0; i < a.length; i++) { if (a[i].paused) a[i].play(); } e = parent.querySelector('[data-autofocus="1"]'); x = e ? e.tagName : null; switch (x) { case 'FORM': e = e.querySelector('.field input, .field select, .field textarea'); if (e) e.focus(); break; default: break; } }, unloadElements = function (parent) { var a, e, x, i; a = parent.querySelectorAll('iframe[data-src=""]'); for (i = 0; i < a.length; i++) { if (a[i].dataset.srcUnload === '0') continue; if ('initialSrc' in a[i].dataset) a[i].dataset.src = a[i].dataset.initialSrc; else a[i].dataset.src = a[i].src; a[i].contentWindow.location.replace('about:blank'); } a = parent.querySelectorAll('video'); for (i = 0; i < a.length; i++) { if (!a[i].paused) a[i].pause(); } e = $(':focus'); if (e) e.blur(); }; window._scrollToTop = scrollToTop; var thisURL = function () { return window.location.href.replace(window.location.search, '').replace(/#$/, ''); }; var getVar = function (name) { var a = window.location.search.substring(1).split('&'), b, k; for (k in a) { b = a[k].split('='); if (b[0] == name) return b[1]; } return null; }; var errors = { handle: function (handler) { window.onerror = function (message, url, line, column, error) { (handler)(error.message); return true; }; }, unhandle: function () { window.onerror = null; } }; on('load', function () { setTimeout(function () { $body.className = $body.className.replace(/\bis-loading\b/, 'is-playing'); setTimeout(function () { $body.className = $body.className.replace(/\bis-playing\b/, 'is-ready'); }, 1250); }, 100); }); loadElements(document.body); var style, sheet, rule; style = document.createElement('style'); style.appendChild(document.createTextNode('')); document.head.appendChild(style); sheet = style.sheet; if (client.mobile) { (function () { if (client.flags.lsdUnits) { document.documentElement.style.setProperty('--viewport-height', '100svh'); document.documentElement.style.setProperty('--background-height', '100dvh'); } else { var f = function () { document.documentElement.style.setProperty('--viewport-height', window.innerHeight + 'px'); document.documentElement.style.setProperty('--background-height', (window.innerHeight + 250) + 'px'); }; on('load', f); on('orientationchange', function () { setTimeout(function () { (f)(); }, 100); }); } })(); } if (client.os == 'android') { (function () { sheet.insertRule('body::after { }', 0); rule = sheet.cssRules[0]; var f = function () { rule.style.cssText = 'height: ' + (Math.max(screen.width, screen.height)) + 'px'; }; on('load', f); on('orientationchange', f); on('touchmove', f); })(); $body.classList.add('is-touch'); } else if (client.os == 'ios') { if (client.osVersion <= 11) (function () { sheet.insertRule('body::after { }', 0); rule = sheet.cssRules[0]; rule.style.cssText = '-webkit-transform: scale(1.0)'; })(); if (client.osVersion <= 11) (function () { sheet.insertRule('body.ios-focus-fix::before { }', 0); rule = sheet.cssRules[0]; rule.style.cssText = 'height: calc(100% + 60px)'; on('focus', function (event) { $body.classList.add('ios-focus-fix'); }, true); on('blur', function (event) { $body.classList.remove('ios-focus-fix'); }, true); })(); $body.classList.add('is-touch'); } })();</script>
-</body>
-
-</html>
+  <div class="Intro" style="width: 596.49px; height: 632.65px; left: 685.88px; top: 291.79px; position: absolute">
+    <div class="Vector" style="width: 421.57px; height: 543.47px; left: 119.65px; top: 89.14px; position: absolute; background: #EDEDED; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 59.55px; height: 19.90px; left: 536.94px; top: 426.24px; position: absolute; background: white"></div>
+    <div class="Vector" style="width: 49.84px; height: 16.50px; left: 543.43px; top: 435.86px; position: absolute; background: white"></div>
+    <div class="Vector" style="width: 41.92px; height: 14.60px; left: 546.23px; top: 449.21px; position: absolute; background: white"></div>
+    <div class="Vector" style="width: 100.94px; height: 80.43px; left: 474.74px; top: 405.45px; position: absolute; background: white"></div>
+    <div class="Vector" style="width: 285.70px; height: 266.70px; left: 228.63px; top: 168.75px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 22.84px; height: 14.52px; left: 475.67px; top: 483.08px; position: absolute; background: black"></div>
+    <div class="Vector" style="width: 78.16px; height: 87.79px; left: 412.62px; top: 411.06px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 31.20px; height: 49.08px; left: 458.80px; top: 449.16px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 134.31px; height: 179.40px; left: 345.55px; top: 10.06px; position: absolute; background: black"></div>
+    <div class="Vector" style="width: 22.09px; height: 21.77px; left: 410.08px; top: 185.30px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 21.26px; height: 21.17px; left: 400.33px; top: 195.58px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 61.13px; height: 192.55px; left: 360.45px; top: 435.35px; position: absolute; background: #C9C9C9"></div>
+    <div class="Vector" style="width: 117.64px; height: 125.19px; left: 303.20px; top: 32.25px; position: absolute; background: white"></div>
+    <div class="Vector" style="width: 78.37px; height: 60.22px; left: 335.48px; top: 150.45px; position: absolute; background: white"></div>
+    <div class="Vector" style="width: 7.46px; height: 13.27px; left: 405.99px; top: 434.22px; position: absolute; background: black"></div>
+    <div class="Vector" style="width: 21.58px; height: 19.54px; left: 389.18px; top: 204.36px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 49.01px; height: 18.97px; left: 353.09px; top: 430.47px; position: absolute; background: black"></div>
+    <div class="Vector" style="width: 20.81px; height: 18.06px; left: 375.76px; top: 208.91px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 101.75px; height: 78.80px; left: 288.98px; top: 0.08px; position: absolute; background: black"></div>
+    <div class="Vector" style="width: 186.13px; height: 209.46px; left: 198.21px; top: 423.14px; position: absolute; background: #C9C9C9"></div>
+    <div class="Vector" style="width: 19.92px; height: 18.24px; left: 359.85px; top: 208.76px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 15.22px; height: 4.50px; left: 356.55px; top: 434.86px; position: absolute; background: white"></div>
+    <div class="Vector" style="width: 26.76px; height: 19.77px; left: 344.41px; top: 429.96px; position: absolute; background: white"></div>
+    <div class="Vector" style="width: 24.54px; height: 135.95px; left: 351.88px; top: 449.33px; position: absolute; background: #C9C9C9"></div>
+    <div class="Vector" style="width: 19.52px; height: 21.85px; left: 342.81px; top: 202.38px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 18.12px; height: 21.56px; left: 331.53px; top: 194.04px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 33.16px; height: 14.33px; left: 311.94px; top: 430.80px; position: absolute; background: black"></div>
+    <div class="Vector" style="width: 73.75px; height: 100.64px; left: 268.52px; top: 74.80px; position: absolute; background: black"></div>
+    <div class="Vector" style="width: 17.88px; height: 21.42px; left: 323.79px; top: 182.86px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 16.91px; height: 16.85px; left: 319.79px; top: 173.83px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 20.02px; height: 5.88px; left: 313.57px; top: 121.66px; position: absolute; background: white"></div>
+    <div class="Vector" style="width: 23.61px; height: 28.44px; left: 300.01px; top: 37.86px; position: absolute; background: black"></div>
+    <div class="Vector" style="width: 17.75px; height: 24.73px; left: 303.31px; top: 76.26px; position: absolute; background: white"></div>
+    <div class="Vector" style="width: 23.41px; height: 11.36px; left: 310.17px; top: 115.96px; position: absolute; background: white"></div>
+    <div class="Vector" style="width: 58.34px; height: 23.67px; left: 245.58px; top: 415.94px; position: absolute; background: black"></div>
+    <div class="Vector" style="width: 154.30px; height: 232.53px; left: 96.96px; top: 198.83px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 5.68px; height: 13.86px; left: 240.83px; top: 412.68px; position: absolute; background: #C9C9C9"></div>
+    <div class="Vector" style="width: 27.03px; height: 8.94px; left: 214.14px; top: 280.73px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 32.80px; height: 34.55px; left: 89.04px; top: 406.52px; position: absolute; background: #50AE36"></div>
+    <div class="Vector" style="width: 108.73px; height: 83.90px; left: 0px; top: 414.67px; position: absolute; background: white"></div>
+    <div class="Vector" style="width: 26.90px; height: 59.96px; left: 288.98px; top: 19.04px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 71.71px; height: 100.52px; left: 268.58px; top: 74.99px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 2.51px; height: 19.41px; left: 339.70px; top: 156.32px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 16.62px; height: 40.93px; left: 307.07px; top: 38.11px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 67.76px; height: 71.57px; left: 303.16px; top: 86.02px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 24.14px; height: 3.10px; left: 321.39px; top: 31.02px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 29.61px; height: 32.19px; left: 300.09px; top: 33.91px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 32.83px; height: 14.36px; left: 347.32px; top: 15.82px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 16.89px; height: 5.34px; left: 372.95px; top: 10.02px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 53.26px; height: 26.11px; left: 305.83px; top: 0px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 38.78px; height: 7.96px; left: 351.88px; top: 2.01px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 26.42px; height: 36.43px; left: 345.53px; top: 32.21px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 19.76px; height: 28.12px; left: 350.84px; top: 37.96px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 58.33px; height: 62.61px; left: 362.41px; top: 68.88px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 57.83px; height: 64.61px; left: 362.96px; top: 124.09px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 54.65px; height: 39.09px; left: 416.90px; top: 150.30px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 35.24px; height: 94.59px; left: 444.62px; top: 80.13px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 57.80px; height: 82.30px; left: 390.20px; top: 10.05px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 78.14px; height: 36.04px; left: 335.81px; top: 174.61px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 147.17px; height: 163.06px; left: 153.29px; top: 168.86px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 86.34px; height: 108.69px; left: 96.96px; top: 322.66px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 68.62px; height: 65.22px; left: 173.81px; top: 328.13px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 94.59px; height: 67.96px; left: 144.51px; top: 293.32px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 82.63px; height: 24.27px; left: 129.89px; top: 353.66px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 32.80px; height: 34.55px; left: 89.10px; top: 406.62px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 20.76px; height: 74.91px; left: 230.59px; top: 200.14px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 20.83px; height: 28.44px; left: 228.88px; top: 251.20px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 27.03px; height: 8.94px; left: 214.14px; top: 280.73px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 24.51px; height: 135.41px; left: 235.05px; top: 284.10px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 105.77px; height: 29.75px; left: 244.13px; top: 403.79px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 112.02px; height: 43.35px; left: 327.70px; top: 392.39px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 71.75px; height: 75.77px; left: 265.14px; top: 332.72px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 59.53px; height: 36.76px; left: 257.34px; top: 376.58px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 22.79px; height: 58.16px; left: 477.26px; top: 232.27px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 26.48px; height: 43.21px; left: 471.54px; top: 260.53px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 36.67px; height: 98.19px; left: 434.88px; top: 299.54px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 56.85px; height: 99.29px; left: 443.27px; top: 301.28px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 35.81px; height: 15.64px; left: 446.08px; top: 389.27px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 48.54px; height: 21.72px; left: 438.85px; top: 411.08px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 59.38px; height: 21.01px; left: 431.13px; top: 423.04px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 63.23px; height: 221.05px; left: 451.12px; top: 185.30px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 7.90px; height: 26.60px; left: 480.73px; top: 402.99px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 20.02px; height: 49.66px; left: 458.90px; top: 447.08px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 46.52px; height: 30.11px; left: 480.84px; top: 435.58px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 9.15px; height: 4.49px; left: 497.87px; top: 449.19px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 23.98px; height: 21.15px; left: 492.67px; top: 452.22px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 15.99px; height: 33.07px; left: 533.31px; top: 431.27px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 72.96px; height: 21.64px; left: 476.49px; top: 464.24px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 23.70px; height: 43.03px; left: 474.66px; top: 454.60px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 9.56px; height: 0.73px; left: 473.54px; top: 449.16px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 71.02px; height: 22.80px; left: 420.52px; top: 476.10px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 68.57px; height: 29.65px; left: 507.12px; top: 405.41px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 52.11px; height: 19.39px; left: 544.35px; top: 426.24px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 46.54px; height: 15.91px; left: 546.73px; top: 436.11px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 32.42px; height: 9.64px; left: 555.73px; top: 449.76px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 15.34px; height: 5.63px; left: 549.57px; top: 458.28px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 40.61px; height: 16.85px; left: 47.63px; top: 414.97px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 49.62px; height: 30.75px; left: 1.06px; top: 431.99px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 44.15px; height: 20.15px; left: 0.08px; top: 452.65px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 96.98px; height: 57.17px; left: 11.67px; top: 441.45px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 4.55px; height: 4.83px; left: 55.04px; top: 455.99px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 4.05px; height: 5.57px; left: 46.63px; top: 445.53px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 2.46px; height: 2.48px; left: 44.73px; top: 439.49px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 26.76px; height: 18.72px; left: 344.35px; top: 431.15px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 15.22px; height: 4.50px; left: 356.55px; top: 434.86px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 0.76px; height: 8.79px; left: 312.03px; top: 434.16px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 0.31px; height: 8.40px; left: 303.76px; top: 433.51px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 0.84px; height: 10.46px; left: 245.52px; top: 416.35px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 1.36px; height: 13.35px; left: 240.83px; top: 413.13px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 57.68px; height: 16.38px; left: 245.91px; top: 423.19px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 29.90px; height: 3.91px; left: 312.98px; top: 441.31px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 28.10px; height: 1.40px; left: 372px; top: 448.04px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 2.20px; height: 14.17px; left: 399.90px; top: 436.56px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 2.42px; height: 14.17px; left: 404.92px; top: 436.56px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 6.18px; height: 0.57px; left: 405.99px; top: 446.92px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 0.86px; height: 12.70px; left: 412.60px; top: 434.22px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 42.44px; height: 207.99px; left: 198.17px; top: 424.64px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 4.61px; height: 17.84px; left: 356.39px; top: 568.92px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 27.62px; height: 53.12px; left: 356.78px; top: 579.53px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 80.13px; height: 103.16px; left: 275.44px; top: 457.32px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 94.05px; height: 61.45px; left: 255.23px; top: 504.71px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 56.58px; height: 14.38px; left: 284.86px; top: 548.98px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 10.65px; height: 131.04px; left: 365.77px; top: 451.44px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 11.64px; height: 118.05px; left: 351.88px; top: 451.87px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 41.14px; height: 96.92px; left: 364.36px; top: 488.43px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 27.05px; height: 23.34px; left: 367.82px; top: 566.30px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 12.47px; height: 3.44px; left: 370.11px; top: 593.03px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 39.28px; height: 180.45px; left: 382.31px; top: 447.22px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 6.76px; height: 3.73px; left: 308.22px; top: 62.60px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 27.66px; height: 5.25px; left: 334.38px; top: 61.75px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 22.44px; height: 6.39px; left: 336.24px; top: 76.21px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 1.53px; height: 5.73px; left: 339.52px; top: 79.35px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 1.60px; height: 5.31px; left: 310.92px; top: 78.47px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 10.63px; height: 7.14px; left: 308.88px; top: 76.29px; position: absolute; border: 0.96px black solid"></div>
+    <div class="Vector" style="width: 13.66px; height: 37.19px; left: 307.92px; top: 70.85px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 3.50px; height: 1.74px; left: 317.56px; top: 105.56px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 3.65px; height: 5.28px; left: 324.22px; top: 104.19px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 23.41px; height: 11.28px; left: 310.17px; top: 116.04px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 0.20px; height: 4.10px; left: 313.53px; top: 122.09px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 21.75px; height: 1.09px; left: 312.04px; top: 126.36px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 8.91px; height: 1.69px; left: 315.06px; top: 134.27px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 112.38px; height: 50.82px; left: 319.86px; top: 176.17px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 11px; height: 11.04px; left: 410.51px; top: 195.80px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 13.43px; height: 7.95px; left: 415.86px; top: 187.06px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 10.34px; height: 12.14px; left: 400.52px; top: 204.67px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 7.39px; height: 14.33px; left: 389.18px; top: 209.26px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 3.91px; height: 15.46px; left: 375.80px; top: 211.28px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 2.19px; height: 14.36px; left: 359.99px; top: 209.42px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 6.20px; height: 12.27px; left: 343.03px; top: 202.95px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 9.77px; height: 10.10px; left: 331.98px; top: 193.84px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 12.04px; height: 7.50px; left: 323.69px; top: 183.09px; position: absolute; border: 0.48px black solid"></div>
+    <div class="Vector" style="width: 149.36px; height: 0px; left: 235.02px; top: 632.63px; position: absolute; border: 0.96px black solid"></div>
+  </div>
+  <div class="RacontezVotreHistoireEnBd" style="width: 556.08px; left: 160px; top: 293px; position: absolute; color: #4CB232; font-size: 106.35px; font-family: Archivo; font-weight: 900; line-height: 109.33px; word-wrap: break-word">Racontez votre histoire en BD.</div>
+  <div class="UneAventureVisuelleUnique" style="width: 406.26px; left: 162px; top: 810px; position: absolute; color: #484848; font-size: 52.46px; font-family: Archivo; font-weight: 300; word-wrap: break-word">Une aventure visuelle unique !</div>
+  <div class="Group81" style="width: 381.57px; height: 1119px; left: 160px; top: 1385.57px; position: absolute; transform: rotate(-90deg); transform-origin: 0 0">
+    <div class="Rectangle247" style="width: 603.05px; height: 54.39px; left: 0px; top: -54.39px; position: absolute; background: #4CB232"></div>
+    <div class="Rectangle248" style="width: 468.20px; height: 46.23px; left: 505.10px; top: -235.54px; position: absolute; background: #E0F5DB"></div>
+    <div class="Rectangle251" style="width: 488.91px; height: 45.46px; left: 6.72px; top: -160.74px; position: absolute; background: #E0F5DB"></div>
+    <div class="Rectangle250" style="width: 309.16px; height: 48.51px; left: 410.05px; top: -274.70px; position: absolute; background: #E0F5DB"></div>
+    <div class="Rectangle249" style="width: 243.42px; height: 46.25px; left: 6.72px; top: -197.57px; position: absolute; background: #E0F5DB"></div>
+    <div class="RacontezVotreHistoireUneCaseLaFois" style="width: 581.02px; left: 13.83px; top: -45.75px; position: absolute; color: white; font-size: 28.43px; font-family: Inter; font-weight: 500; line-height: 36.96px; word-wrap: break-word">Racontez votre histoire, une case à la fois.</div>
+    <div class="UtilisezLePouvoirNarratifDeLaBandeDessinEPourEngagerVotreAudienceDUneManiReOriginaleLesBandesDessinEsCrEntUnLienMotionnelFortAvecLePublicEllesRendentVotreRCitAccessibleEtMMorableDPassantLesBarriResCulturellesEtGNRationnellesAvecDesPersonnagesVibrantsEtDesIntriguesPassionnantesNousDonnonsVieVotreMessage" style="width: 1105.17px; left: 13.83px; top: -381.57px; position: absolute; color: #242424; font-size: 28.43px; font-family: Inter; font-weight: 400; line-height: 36.96px; word-wrap: break-word">Utilisez le pouvoir narratif de la bande dessinée pour engager votre audience d'une manière originale. <br/><br/>Les bandes dessinées créent un lien émotionnel fort avec le public. Elles rendent votre récit accessible et mémorable, dépassant les barrières culturelles et générationnelles. Avec des personnages vibrants et des intrigues passionnantes, nous donnons vie à votre message.</div>
+  </div>
+</div>
