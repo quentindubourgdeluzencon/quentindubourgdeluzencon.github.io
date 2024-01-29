@@ -3,9 +3,9 @@
 }
 
 .header {  
-  width: 60%;
+  width: 70%;
   overflow: hidden;
-  padding: 60px 60px;
+  padding: 1rem!important;
   font-family: Archivo;
   color: #242424;
   display: block;
@@ -19,8 +19,7 @@
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 28px;
-  line-height: 25px;
+  font-size: 1.4rem;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -48,6 +47,10 @@
   color: #4cb232;
 }
 
+#logo-cpc-green{
+  max-height : 6rem;
+}
+
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 1080px) {
   .header a {
@@ -66,8 +69,8 @@ section {
   font-family: Archivo;
   color: #242424;
   text-decoration: none;
-  font-size: 24px;
-  width : 60%;
+  font-size:1.3rem;
+  width : 70%;
   margin-top:40px;
   margin-bottom:40px;
   display: block;
@@ -99,7 +102,7 @@ section {
   margin: 0;
   padding: 0;
   text-align: center;
-  width : 100%
+  width : 70%
 }
 
 .columns-container .column{ 
@@ -116,30 +119,32 @@ section {
   float: left;
 }
 
-.intro-image{
-  text-align:right;
-  float: left;
+#intro-image{
+  /* text-align:right; */
+  padding-left: 5%;
+  float: right;
+  height:30rem;
 } 
 
 h1{
-  font-size: 90px;
+  font-size: 4rem;
   font-weight: 900;
   font-family: Archivo;
   color: #4cb232; 
-  margin : 60px 0px;
+  margin : 3rem 0rem;
 }
 
 #sub-title{
-  font-size: 60px;
+  font-size: 3rem;
   font-weight: 300;
   color: #484848;
-  margin : 20px 0px;
+  margin : 3rem 0px;
   margin-top: auto; /*--> push to the bottom
   margin-bottom: 0; */
 }
 
 .paragraph{
-  margin-top: 20px;
+  margin-top: 1rem;
   text-align: left;
 }
 
@@ -147,7 +152,7 @@ h1{
 /* Section 2*/
  
 h2 {  
-  font-size: 80px;
+  font-size: 3.5rem;
   font-weight: 700;
   font-family: Archivo;
   color: #242424; 
@@ -155,7 +160,7 @@ h2 {
 }
 
 h3{  
-  font-size: 40px;
+  font-size: 1.7rem;
   font-weight: 600;
   font-family: Archivo;
   margin : 20px 0px;
@@ -190,9 +195,9 @@ footer {
   margin-right: auto;  
   font-family: Archivo;
   color: #242424;
-  font-size: 24px;
+  font-size: 0.5rem;
 }
 
-#contact{width:60%;  display: block;
+#contact{width:70%;  display: block;
   margin-left: auto;
   margin-right: auto;  }
