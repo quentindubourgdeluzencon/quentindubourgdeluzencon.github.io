@@ -3,7 +3,7 @@
 }
 
 .header {  
-  width: 70%;
+  width: 80%;
   overflow: hidden;
   padding: 1rem!important;
   font-family: Archivo;
@@ -51,18 +51,6 @@
   max-height : 6rem;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 1080px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-  .navbar {
-    float: none;
-  }
-}
-
 /* Introduction section */
 section {
   background-color: #fff;
@@ -70,12 +58,13 @@ section {
   color: #242424;
   text-decoration: none;
   font-size:1.3rem;
-  width : 70%;
+  width : 80%;
   margin-top:40px;
   margin-bottom:40px;
   display: block;
   margin-left: auto;
   margin-right: auto;  
+  overflow:hidden;
 }
 
 .green-text{
@@ -95,6 +84,31 @@ section {
   color: #FF4B4B;
 }
 
+#introduction{
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#introduction img {
+  width: 40%;
+  float: right;
+  margin-left: 10%;
+}
+
+@media (max-width: 1080px) {
+  #introduction img {
+      float: none;
+      display: block;
+      margin: 0 auto 20px;
+      width: 60%;
+  }
+
+  #introduction h1, #introduction h2, #introduction p {
+      width: 100%;
+  }
+}
+
 .columns-container{
   display: inline-flex;
   justify-content: space-between;
@@ -102,7 +116,7 @@ section {
   margin: 0;
   padding: 0;
   text-align: center;
-  width : 70%
+  width : 80%
 }
 
 .columns-container .column{ 
@@ -121,7 +135,8 @@ section {
 
 #intro-image{
   /* text-align:right; */
-  padding-left: 5%;
+  max-width:60%;
+  padding: 5%;
   float: right;
   height:30rem;
 } 
@@ -198,6 +213,21 @@ footer {
   font-size: 0.5rem;
 }
 
-#contact{width:70%;  display: block;
+#contact{width:80%;  display: block;
   margin-left: auto;
   margin-right: auto;  }
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 1080px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .navbar {
+    float: none;
+  }
+  #intro-image{
+    float: none;
+  }
+}
