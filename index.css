@@ -1,233 +1,260 @@
-.body {
-  background-color: #fff;
-}
-
-.header {  
-  width: 80%;
-  overflow: hidden;
-  padding: 1rem!important;
+body {
+  margin: 0;
   font-family: Archivo;
   color: #242424;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;  
+  font-weight: 400;
+  line-height: 1.45;
+  font-size: 1.4rem;
+  text-align: left;
+  justify-content: center;
+  /* width:70%; */
+  margin:auto;
 }
 
-/* Style the header links */
-.header a {
-  float: left;
-  text-align: center;
-  padding: 12px;
+/* Style the header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem!important;
+  box-sizing: border-box;
   text-decoration: none;
   font-size: 1.4rem;
-}
-
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-  color: rgb(139, 139, 139);
-}
-
-/* Style the active/current link*/
-.header a.active {
-}
-
-/* Float the link section to the right */
-.navbar {
-  float: right;
-
-}
-
-/* Color of the green navbar icon "livret de présentation" */
-.navbar-element-green {
-  font-weight: 500;
-  color: #4cb232;
-}
-
-#logo-cpc-green{
-  max-height : 6rem;
-}
-
-/* Introduction section */
-section {
-  background-color: #fff;
-  font-family: Archivo;
-  color: #242424;
-  text-decoration: none;
-  font-size:1.3rem;
-  width : 80%;
-  margin-top:40px;
-  margin-bottom:40px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;  
-  overflow:hidden;
-}
-
-.green-text{
-  font-weight: 500;
-  color: #4cb232;
-}
-
-.purple-text{
-  color: #ce52d0;
-}
-
-.blue-text{
-  color: #0B6CFF;
-}
-
-.red-text{
-  color: #FF4B4B;
-}
-
-#introduction{
-  width: 70%;
-  margin: auto;
-  overflow: hidden;
-}
-
-#introduction img {
-  width: 40%;
-  float: right;
-  margin-left: 10%;
-}
-
-@media (max-width: 1080px) {
-  #introduction img {
-      float: none;
-      display: block;
-      margin: 0 auto 20px;
-      width: 60%;
-  }
-
-  #introduction h1, #introduction h2, #introduction p {
-      width: 100%;
-  }
-}
-
-.columns-container{
-  display: inline-flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  line-height: 1.45;
+  margin:auto;
   width : 80%
 }
 
-.columns-container .column{ 
-  display: flex;             /* new; nested flex container */
-  flex-direction: column;    /* new; stack flex items vertically */
-  flex-grow: 1;
-  text-align: left;
-  /* height: 100%;           <-- remove to enable equal height columns; see reference #1 */
+/* Change the background color on mouse-over */
+header a:hover {
+  color: rgb(139, 139, 139)!important;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #242424;
+}
+
+#menu-icon {
+  display: none;
+  font-size: 2rem!important;
+  cursor: pointer;
+}
+
+#logo-cpc-green
+{
+  height: 5rem;
+}
+
+@media (max-width: 1080px) {
+  header  {
+      /* flex-direction: column; */
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  nav li {
+      text-align: left;
+      margin: 10px 0;
+  }
+
+  #menu-icon {
+      display: block;
+  }
+
+  #menu-navbar{    
+    flex-basis: 100%;
+    flex-grow: 1;
+  margin-bottom: 1rem;}
+
+  body{width : 100%}
+  #logo-cpc-green
+{
+  height: 3rem;
+}
 }
 
 
-#titles{
-  text-align: left;
-  float: left;
+/* Section 1*/
+
+section {
+
+  font-family: Archivo;
+  color: #242424;
+  text-decoration: none;
+  font-size: 1.4rem;
+  display: block;
+  margin: 2rem auto 2rem auto ;
+  overflow:hidden;
+  padding: 1rem!important;
+  width : 80%
 }
 
-#intro-image{
-  /* text-align:right; */
-  max-width:60%;
-  padding: 5%;
-  float: right;
-  height:30rem;
-} 
 
 h1{
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 900;
+  line-height: 1.2;
   font-family: Archivo;
   color: #4cb232; 
-  margin : 3rem 0rem;
+  margin : 2rem 0rem 0.5rem 0rem;
 }
 
-#sub-title{
-  font-size: 3rem;
+h4{
+  font-size:3rem;
   font-weight: 300;
-  color: #484848;
-  margin : 3rem 0px;
-  margin-top: auto; /*--> push to the bottom
-  margin-bottom: 0; */
-}
-
-.paragraph{
-  margin-top: 1rem;
-  text-align: left;
+  color: #8a8a8a;
+  margin : 1rem 0rem 0.5rem 0rem;
 }
 
 
-/* Section 2*/
- 
+/* Section 1*/
+
 h2 {  
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: 700;
+  line-height: 1.2;
   font-family: Archivo;
   color: #242424; 
-  margin : 120px 0px 60px 0px;
+  margin : 2rem 0rem 1rem 0rem;
 }
 
 h3{  
-  font-size: 1.7rem;
+  font-size: 3rem;
   font-weight: 600;
   font-family: Archivo;
-  margin : 20px 0px;
+  margin : 1rem 0rem 0.5rem 0rem;
 }
 
-p{  letter-spacing: 0.03em;
-  line-height: 130%;
+
+
+
+@media (max-width: 1080px) { 
+
+
+.text-content {
+    width: 100%;
 }
-.paragraph{letter-spacing: 0.03em;
-  line-height: 130%;;
+h1{
+  font-size: 2.3rem;
 }
 
-.presentation-image{
-  height: 300px;
+h4{
+  font-size:2rem;
 }
 
-/* Section 3*/
-.BD-presentation{
-  margin-bottom: 100px;
+h2{
+  font-size: 2rem; }
+
+section{
+  font-size: 1.2rem;
 }
 
-/* footer*/
-footer {
-  /* position: fixed; */
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #F5F5F5;
+  h2{
+    font-size: 2.1rem; }
+
+  h3{
+    font-size: 1.8rem;
+  }
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  width: 60%;
+}
+
+
+.image img {
+  width: auto;
+  height: auto;
+  margin : 0 2rem 0 2rem;
+}
+
+@media (max-width: 1080px) {
+  .container-right {
+      flex-direction: column-reverse;
+  }
+
+  .container-left {
+    flex-direction: column;
+}
+
+  .text{
+      width: 100%;
+  }
+  .image{
+    width: 80%;
+}
+  .image img{
+    width: 100%;
+    float: none!important;
+    margin: auto!important
+}
+}
+
+.contact-info{font-size: 1.2rem;}
+footer{ width: 100%;
+  background-color: #F5F5F5;}
+.contact-info{font-size: 1.2rem;}
+.legal-mentions{ width: 100%;
+  height:2rem;
   text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;  
-  font-family: Archivo;
-  color: #242424;
-  font-size: 0.5rem;
+  padding: 1rem 0;
+  /* position: absolute; */
+    bottom: 0;
+  background-color: #EDEDED;
+margin:auto}
+
+.legal-mentions p{ 
+  margin: 0;
+  font-size: 0.8rem;
 }
 
-#contact{width:80%;  display: block;
-  margin-left: auto;
-  margin-right: auto;  }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 1080px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: center;
+.images-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.images-container img {
+  width: 20%; /* Chaque image prend environ 1/4 de la largeur du conteneur */
+  margin: 2rem; /* Petite marge entre les images */
+}
+
+@media (max-width: 1080px) {
+  .images-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
-  .navbar {
-    float: none;
+
+  .images-container img {
+      width: auto; /* Les images prendront la largeur maximale du conteneur */
+      max-width: 100%; /* S'assure que les images ne dépassent pas le conteneur */
+      margin: 1rem 1rem; /* Marge supérieure et inférieure pour chaque image */
   }
-  #intro-image{
-    float: none;
-  }
+
 }
