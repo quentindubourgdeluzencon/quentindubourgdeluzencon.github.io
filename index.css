@@ -162,7 +162,7 @@ footer {
 
 .contact-info a {
   text-decoration: none;
-  color: black; /* ou la couleur de votre choix */
+  color: #242424; /* ou la couleur de votre choix */
   font-size: 1rem; /* Ajustez la taille de police selon vos besoins */
   margin-left: 8px; /* Ajustez l'espacement si nécessaire */
 }
