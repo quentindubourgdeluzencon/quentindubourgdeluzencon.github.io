@@ -146,15 +146,31 @@ footer {
   color: #242424;
   font-size: 1.4rem;
   margin: auto;
-  padding: 1rem;
+  padding: 3rem 0;
   width: 70%;
   overflow: hidden;
   display: block;
 
 }
 
+
 .contact-info {
-  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: black; /* ou la couleur de votre choix */
+  font-size: 1rem; /* Ajustez la taille de police selon vos besoins */
+  margin-left: 8px; /* Ajustez l'espacement si nécessaire */
+}
+
+.icon {
+  width: 1em; /* Cela garantit que la taille de l'icône correspond à la taille du texte */
+  height: auto; /* Cela garde le ratio de l'image */
+  vertical-align: middle; /* Alignez l'icône avec le milieu du texte */
 }
 
 .legal-mentions {
@@ -267,19 +283,21 @@ footer {
   .pages-container {
     flex-wrap: nowrap;
     overflow-x: auto;
-    width : 30%;
+    width : 100%;
     margin : auto
   }
 
   .pages-container img {
     
-    width: auto;
+    width: 30%;
     /* Les images prendront la largeur maximale du conteneur */
     max-width: 100%;
     /* S'assure que les images ne dépassent pas le conteneur */
     margin: 1rem 1rem;
     /* Marge supérieure et inférieure pour chaque image */
   }
+
+  #footer-content{width: 90%;}
 }
 
 @media (max-width: 576px) {  .image {
@@ -288,4 +306,7 @@ footer {
 }
 .pages-container {
   width : 100%;
+}
+.pages-container img{
+  width : auto;
 }}
