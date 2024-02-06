@@ -289,7 +289,7 @@ footer {
 
   .pages-container img {
     
-    width: 30%;
+    width: 25%;
     /* Les images prendront la largeur maximale du conteneur */
     max-width: 100%;
     /* S'assure que les images ne dépassent pas le conteneur */
