@@ -45,8 +45,8 @@ header a:hover {
   white-space: normal;
   /* width : auto; */
   /* box-sizing: border-box; */
-    /* display: inline-block; */
-  display: block; 
+    display: inline-block;
+  /* display: block;  */
   /* cursor: pointer; Type de curseur */
   /* transition: all 0.3s ease; Transition pour les effets de survol */
 }
