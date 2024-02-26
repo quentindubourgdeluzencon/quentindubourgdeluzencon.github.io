@@ -20,8 +20,8 @@ li{
 }
 a.unstyled {
   text-decoration: none;
-  color: #242424;
-  font-size: 1rem;
+  /* color: #242424; */
+  font-size: 1.1rem;
 }
 
 img {
