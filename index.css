@@ -424,8 +424,13 @@ section.section-vousaussi .image img {
     float: right;
   }
 }
-
-
+/* qui sommes-nous */
+section.section-qui-sommes-nous .bouton-stylise{
+  margin:3rem auto auto auto;
+  display:block;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); /* Ombre avec 20% d'opacité */
+ }
+ 
 
 /* Footer styles */
 footer {
