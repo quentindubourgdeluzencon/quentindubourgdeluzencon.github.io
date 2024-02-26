@@ -4,6 +4,14 @@
   font-family: Archivo, sans-serif;
 }
 
+hr {
+  border: none;
+  height: 1px;
+  background-color: #F3F3F3;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 body {
   margin: 0;
   font-family: Archivo, sans-serif;
@@ -15,9 +23,10 @@ body {
   justify-content: center;
 }
 
-li{
+li {
   font-size: 1.1rem;
 }
+
 a.unstyled {
   text-decoration: none;
 }
@@ -27,7 +36,7 @@ img {
 }
 
 .px {
-  padding-left: 2rem !important; 
+  padding-left: 2rem !important;
   padding-right: 2rem !important;
 }
 
@@ -63,7 +72,7 @@ img {
 
 
 @media (max-width: 800px) {
- 
+
   .px {
     padding-left: 1rem !important;
     padding-right: 1rem !important;

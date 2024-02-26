@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./utils.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="icon" type="image/svg" href="./public/logo.svg">
+</head>
+
+<body>
+
+  <header id="header" class="py px">
+
+    <a href="index.html"> <img id="logo-cpc-green" alt="" src="./public/logo-cpc-green.svg" /></a>
+    <div id="menu-icon" onclick="toggleMenu()">☰</div>
+    <div id="menu-navbar">
+      <nav>
+        <ul id="menu-navbar-ul">
+          <li><a href="index.html#albums">Nos bandes-dessinées</a></li>
+          <li><a href="Qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <!-- <div > -->
+              <button class="bouton-stylise"><a class = "unstyled" href="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf"
+              download="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf"
+              >Brochure de présentation <i class="fas fa-external-link-alt"></i></a></button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu-navbar-ul');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+        menu.style.borderBottom = '1px solid #F3F3F3';
+        menu.style.padding = '10px ';
+      }
+    }
+  </script>
+
+<!-- Qui sommes nous -->
+<section id ="méthodologie" class="section-qui-sommes-nous">
+
+  <div class="container">
+    <h2 class="mb py">
+      Qui 
+      <span style="white-space: nowrap;">sommes-nous ?</span>
+      </span>
+    </h2>
+  </div>
+
+  <div class="container">
+
+    <div class="text mb">
+      <p>
+        Nous sommes <b>un collectif</b> vibrant d'artistes, d'auteurs, et de professionnels spécialisés 
+        en bande dessinée, illustration, scénographie, et pédagogie. Notre mission est de concevoir
+         des albums sur mesure pour des entreprises, musées, et associations, en collaborant directement
+          avec eux, sans intermédiaire. <b>Cette approche nous permet de nous immerger pleinement dans les 
+          problématiques et enjeux spécifiques à chaque projet.</b><br><br>
+
+        <b>Notre collectif fonctionne de manière unique : chaque projet est piloté par un responsable dédié,
+         garantissant une gestion personnalisée et efficace.</b> L'initiative de ce rassemblement 
+         remonte au début de l'année 2024, sous l'impulsion de Quentin Dubourg. Animé par la conviction 
+         que la bande dessinée est un outil de communication idéal dans le monde contemporain, 
+         <b><br><br>
+          
+          Case par case rapproche des artistes et auteurs passionnés d'institutions 
+         à la recherches de moyens ludiques de faire passer leurs messages.</b> 
+        Nous croyons fermement en la capacité de la BD à s'intégrer dans notre quotidien, non 
+         seulement comme divertissement, mais aussi comme moyen de mettre en lumière des aspects méconnus 
+         de l'histoire ou de transmettre des idées et informations à travers les générations.<br><br>
+        
+        Nous sommes fiers de ce que nous faisons et passionnés par le potentiel infini de la 
+        bande dessinée pour raconter des histoires, partager des connaissances, et créer des 
+        ponts entre les différentes cultures et générations.</p>
+    </div>
+    <button class="bouton-stylise"><a class = "unstyled"
+      href="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf"
+      download="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf"
+      >Découvrez notre <span style="white-space: nowrap;">brochure complète <i class="fas fa-external-link-alt"></i></span></a></button>
+  </div>
+</section>
+
+
+  <!-- contact -->
+  <section class="section-vousaussi">
+    <div class="container">
+
+      <div class="image  px py">
+        <img src="./public/vieux.svg" alt="Case par case.">
+      </div>
+
+      <div class="text">
+        <h1 style="color: #FF4B4B;">Et si vous aussi, aviez une histoire à <span style="white-space: nowrap;">raconter
+            ?</span></h3>
+
+          <p>Pour plus d’informations sur nos prix et notre approche, vous pouvez télécharger notre <a
+              style="color: #FF4B4B;"
+              href="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf"
+              download="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf">Brochure
+              de présentation</a> (pdf).
+          </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+
+    <div id="contact" class="py container d-flex justify-between container-left">
+
+      <div class="text">
+
+        <h3 class="mt" style="color: #FF4B4B;">
+          Contactez-nous !</h3>
+        <p>N'hésitez pas à nous contacter pour des conseils ou un devis personnalisé.
+          Une discussion brève et sans engagement sur votre projet nous permettra de mieux répondre à vos besoins.
+
+
+
+
+
+        </p>
+
+        <!-- <div class="contact-info"> -->
+
+        <div class="d-flex mt">
+          <img src="public/téléphone.png" alt="Téléphone" class="icon">
+          <a class="unstyled ml" style="color: #242424;" href="tel:+33781248204">07 81 24 82 04</a>
+        </div>
+
+        <div class="d-flex mt mb">
+          <img src="public/mail.png" alt="Email" class="icon">
+          <a class="unstyled ml" style="color: #242424;" href="mailto:quentin@caseparcase.com">quentin@caseparcase.fr</a>
+        </div>
+
+        <!-- </div> -->
+
+      </div>
+
+      <div class="image px py">
+        <a href="index.html"><img src="./public/logo-cpc-red.svg" id="logo-cpc-red" alt="Case par case."></a>
+      </div>
+
+    </div>
+
+    <div class="legal-mentions">
+      <p>2024 © Case par case. Tous droits réservés</p>
+    </div>
+  </footer>
+
+</body>
+
+
+</html>
