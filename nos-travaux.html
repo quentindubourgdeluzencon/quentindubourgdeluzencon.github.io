@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./utils.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="icon" type="image/svg" href="./public/logo.svg">
+</head>
+
+<body>
+
+  <header id="header" class="py px">
+
+    <a  href="index.html"> <img id="logo-cpc-green" alt="" src="./public/logo-cpc-green.svg" /></a>
+    <div id="menu-icon" onclick="toggleMenu()">☰</div>
+    <div id="menu-navbar">
+      <nav>
+        <ul id="menu-navbar-ul">
+          <li><a href="nos-travaux.html">Nos bandes-dessinées</a></li>
+          <li><a href="Qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <!-- <div > -->
+              <button class="bouton-stylise"><a class = "unstyled" href="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf"
+              download="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf"
+              >Brochure de présentation <i class="fas fa-external-link-alt"></i></a></button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu-navbar-ul');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+        menu.style.borderBottom = '1px solid #F3F3F3';
+        menu.style.padding = '10px ';
+      }
+    }
+  </script>
+
+   <!-- albums -->
+  <section id="albums">
+
+    <div class="container">
+      <div class="text">
+      <h2 class = "mb py">
+        <span>Nos travaux, </span>
+        <span style="color: #FF4B4B;"> vos récits.</span>
+        </span>
+      </h2>
+      
+        <p>
+        Cherchez-vous à <b>renforcer ou étendre votre lien avec le public ?</b> <br>
+        
+        Désirez-vous valoriser certains aspects de votre patrimoine pour vous <b>démarquer au sein de votre territoire </b>?<br>
+        
+        Avez-vous en tête <b>des événements qui mériteraient d'être racontés ? </b><br>
+        
+        Souhaitez-vous <b>élargir votre rayonnement culturel</b> via votre boutique ou en distribuant un album en librairie ?<br>
+    </p>
+    <h3>Discutons-en ! Nous trouverons probablement la solutions. </h3>
+    <p>
+      Des albums historiques aux récits de fiction, en passant par les livres pour enfants, notre parcours diversifié a renforcé notre conviction : 
+      la bande dessinée est un outil puissant pour partager les connaissances et communiquer des messages percutants. <br>   <br>
+      <b>Musées, maisons d'édition, associations, collectivités... Nos partenaires nous ont fait confiance, et nous leur en sommes profondément reconnaissants.</b> 
+  </p>
+    </div>
+    </div>
+    
+    <div class="image-carousel">
+      <img src="public/pages/utah-couverture.jpg" alt="Image 1">
+      <img src="public/pages/utah-p1.jpg" alt="Image 2">
+      <img src="public/pages/utah-p2.jpg" alt="Image 3">
+      <img src="public/pages/utah-p3.jpg" alt="Image 4">
+    </div>
+
+    <div class="container">
+      <h3>Les hommes d’Utah -<i> Éditions Kaolin - Quentin Dubourg, Carole Riegel</i></h3>
+      <p>Pour le musée d'<b>Utah Beach en Normandie</b>, nous avons créé un album exclusif, vendu dans leur boutique.
+        Cette réalisation a permis au musée de se distinguer dans un environnement culturel riche, en attirant un public
+        international à l'occasion du 80ème anniversaire du Débarquement. Cet album dépeint l'histoire véridique de
+        David Dewhurst, un pilote de bombardier audacieux qui a participé à plus de 160 missions avant de jouer un rôle
+        déterminant le jour du D-Day.</p>
+    </div>
+
+    <div class="image-carousel">
+      <img src="public/pages/toutankhamon-couverture.jpg" alt="Image 1">
+      <img src="public/pages/toutankhamon-p1.jpg" alt="Image 2">
+      <img src="public/pages/toutankhamon-p2.jpg" alt="Image 3">
+      <img src="public/pages/toutankhamon-p4.jpg" alt="Image 4">
+    </div>
+
+    <div class="container">
+      <h3>L'Histoire du monde en BD : Toutankhamon -<i> Casterman - Dimitri Zegboro, Béatrice Bottet</i></h3>
+      <p>Il y a 100 ans, l'archéologue Howard Carter révélait au monde le tombeau de Toutankhamon et ses incroyables trésors,
+         parfaitement conservés. Une découverte inestimable qui permit de reconstituer la vie et le règne du pharaon, 
+         de sa naissance aux rites funéraires qui ont entouré sa mort. Pour tout savoir de cette aventure extraordinaire, 
+         laissez-vous guider dans le temps : des années 1300 avant Jésus-Christ, à l'époque de Toutankhamon, au XXe siècle aux côtés des archéologues, 
+         voyagez au coeur des mystères de l'Égypte...</p>
+    </div>
+
+    <div class="image-carousel">
+      <img src="public/pages/lehavre-couverture.jpg" alt="Image 1">
+      <img src="public/pages/lehavre-p1.jpg" alt="Image 2">
+      <img src="public/pages/lehavre-p2.jpg" alt="Image 3">
+      <img src="public/pages/lehavre-p3.jpg" alt="Image 4">
+    </div>
+
+    <div class="container">
+      <h3>Le Havre T.3 -<i> Éditions petit-à-petit</i></h3>
+      <p>Découvrez et redécouvrez Le Havre et l’histoire de ses quartiers ! À travers des bandes dessinées passionnantes
+        et des pages documentaires florissantes d’informations, les quartiers du Havre n’auront bientôt plus de secret
+        pour vous ! Album disponible en librairie.</p>
+    </div>
+
+    
+
+    <div class="image-carousel">
+      <img src="public/pages/maginot-couverture.jpg" alt="Image 1">
+      <img src="public/pages/maginot-p1.jpg" alt="Image 2">
+      <img src="public/pages/maginot-p2.jpg" alt="Image 3">
+      <img src="public/pages/maginot-p3.jpg" alt="Image 4">
+    </div>
+
+    <div class="container">
+      <h3>André Maginot, un patriote exemplaire -<i> Éditions Kaolin - Quentin Dubourg, Carole Riegel</i></h3>
+      <p>Critiquée, caricaturée, l’action d’André Maginot a longtemps été associée à la ligne qui porte son nom. Cette
+        bande dessinée réhabilite totalement le personnage en replaçant son combat dans le contexte de l’époque. Pour
+        fêter ses 70 ans la <b>FNAM</b> a largement distribué cet album à ses partenaires avant de le vendre en
+        librairie. Ce travail a reçu le <b>grand prix de la citoyenneté du 17ème</b>, soulignant l'importance de
+        rétablir des faits historiques souvent méconnus.
+      </p>
+    </div>
+
+    <div class="image-carousel">
+      <img src="public/pages/La-Street-1-En-mode-bolide.jpg" alt="Image 1">
+      <img src="public/pages/La-Street-2-En-mode-rebelle.jpg" alt="Image 2">
+      <img src="public/pages/La-Street-3-En-mode-detente.jpg" alt="Image 3">
+      <img src="public/pages/La-Street-4-En-mode-collectif.jpg" alt="Image 4">
+    </div>
+
+    <div class="container">
+      <h3>La street T1, 2, 3, 4 -<i> Éditions Magnard - Dimitri Zegboro, Cécile Alix</i></h3>
+      <p>La Street, une série de romans graphiques qui embarquent tous les lecteurs ! 
+        Moi, c'est Carl, j'ai 11 ans. Dans la vie, y a ceux qui marchent et ceux qui courent. Moi, je roule : 
+        grâce à Bernard, mon fauteuil de warrior ! Avant, ma mère et moi, on vivait à la campagne.
+        Mais c'est la grosse panique quand ma mère décide brusquement qu'on doit déménager ! 
+      </p>
+    </div>
+
+    <div class="image-carousel">
+      <img src="public/pages/super-couverture.jpg" alt="Image 1">
+      <img src="public/pages/super-couverture2.jpg" alt="Image 2">
+      <img src="public/pages/super-p1.jpg" alt="Image 3">
+      <img src="public/pages/super-p2.jpg" alt="Image 4">
+    </div>
+
+    <div class="container">
+      <h3>L'École des Supers T1, 2 -<i> Éditions Casterman - Dimitri Zegboro, Héloise Sériel, Nicolas Sériel</i></h3>
+      <p>À l'école des Supers, les élèves apprennent à utiliser leurs capacités pour devenir un jour des super-héros. 
+        Chaque enfant possède quelque chose d'unique. À l'école des Supers, tous peuvent en faire un super-pouvoir.
+      </p>
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <!-- contact -->
+  <section class="section-vousaussi">
+    <div class="container">
+
+      <div class="image  px py">
+        <img src="./public/vieux.svg" alt="Case par case.">
+      </div>
+
+      <div class="text">
+        <h1 style="color: #FF4B4B;">Et si vous aussi, aviez une histoire à <span style="white-space: nowrap;">raconter
+            ?</span></h3>
+
+          <p>Pour plus d’informations sur nos prix et notre approche, vous pouvez télécharger notre <a
+              style="color: #FF4B4B;"
+              href="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf"
+              download="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf">Brochure
+              de présentation</a> (pdf).
+          </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+
+    <div id="contact" class="py container d-flex justify-between container-left">
+
+      <div class="text">
+
+        <h3 class="mt" style="color: #FF4B4B;">
+          Contactez-nous !</h3>
+        <p>N'hésitez pas à nous contacter pour des conseils ou un devis personnalisé.
+          Une discussion brève et sans engagement sur votre projet nous permettra de mieux répondre à vos besoins.
+
+
+
+
+
+        </p>
+
+        <!-- <div class="contact-info"> -->
+
+        <div class="d-flex mt">
+          <img src="public/téléphone.png" alt="Téléphone" class="icon">
+          <a class="unstyled ml" style="color: #242424;" href="tel:+33781248204">07 81 24 82 04</a>
+        </div>
+
+        <div class="d-flex mt mb">
+          <img src="public/mail.png" alt="Email" class="icon">
+          <a class="unstyled ml" style="color: #242424;" href="mailto:quentin@caseparcase.com">quentin@caseparcase.fr</a>
+        </div>
+
+        <!-- </div> -->
+
+      </div>
+
+      <div class="image px py">
+        <a href="index.html"><img src="./public/logo-cpc-red.svg" id="logo-cpc-red" alt="Case par case."></a>
+      </div>
+
+    </div>
+
+    <div class="legal-mentions">
+      <p>2024 © Case par case. Tous droits réservés</p>
+    </div>
+  </footer>
+
+</body>
+
+
+</html>
