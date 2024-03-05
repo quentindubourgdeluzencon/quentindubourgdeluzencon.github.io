@@ -43,7 +43,7 @@ header a:hover {
   font-family: Archivo, sans-serif;
   margin:1px;
   white-space: normal;
-  background: linear-gradient(to right, #FF5C00, #DB00FF); /* Dégradé linéaire */
+  background: linear-gradient(to right, #FF164E, #FF9C27); /* Dégradé linéaire */
   /* width : auto; */
   /* box-sizing: border-box; */
     display: inline-block;
