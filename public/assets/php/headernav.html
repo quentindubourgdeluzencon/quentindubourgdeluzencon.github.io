@@ -1,0 +1,34 @@
+<header id="header" class="py px">
+
+<a  href="index.html"> <img id="logo-cpc-green" alt="" src="./public/logo-cpc-green.svg" /></a>
+<div id="menu-icon" onclick="toggleMenu()">☰</div>
+<div id="menu-navbar">
+    <nav>
+    <ul id="menu-navbar-ul">
+        <li><a href="nos-travaux.html">Nos bandes-dessinées</a></li>
+        <li><a href="Qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+        <!-- <div > -->
+            <button class="bouton-stylise"><a class = "unstyled" href="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf"
+            download="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf"
+            >Brochure de présentation <i class="fas fa-external-link-alt"></i></a></button>
+        </li>
+    </ul>
+    </nav>
+</div>
+
+</header>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById('menu-navbar-ul');
+    if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+    } else {
+    menu.style.display = 'block';
+    menu.style.borderBottom = '1px solid #F3F3F3';
+    menu.style.padding = '10px ';
+    }
+}
+</script>
