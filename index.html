@@ -1,23 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="initial-scale=1, width=device-width" />
-  <link rel="stylesheet" href="./utils.css" />
-  <link rel="stylesheet" href="./index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
-  <link rel="icon" type="image/svg" href="./public/logo-cpc-green.png">
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": "http://www.caseparcase.fr",
-      "logo": "https://caseparcase.fr/public/logo-cpc-green.svg"
-    }
-    </script>
+  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."assets/php"; include($IPATH."headermeta.html"); ?>
   <title>Créez une bande-dessinée avec des professionels.</title>
   <meta name="description" content="Spécialiste en création de bandes dessinées sur mesure, 
   notre équipe talentueuse propose des services artistiques uniques pour musées, entreprises et associations. 
@@ -27,40 +11,7 @@
 
 <body>
 
-  <header id="header" class="py px">
-
-    <a  href="index.html"> <img id="logo-cpc-green" alt="" src="./public/logo-cpc-green.svg" /></a>
-    <div id="menu-icon" onclick="toggleMenu()">☰</div>
-    <div id="menu-navbar">
-      <nav>
-        <ul id="menu-navbar-ul">
-          <li><a href="nos-travaux.html">Nos bandes-dessinées</a></li>
-          <li><a href="Qui-sommes-nous.html">Qui sommes-nous ?</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <!-- <div > -->
-              <button class="bouton-stylise"><a class = "unstyled" href="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf"
-              download="https://quentindubourgdeluzencon.github.io/public/Brochure%20de%20présentation%20-%20Case%20par%20case.pdf"
-              >Brochure de présentation <i class="fas fa-external-link-alt"></i></a></button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-  </header>
-
-  <script>
-    function toggleMenu() {
-      var menu = document.getElementById('menu-navbar-ul');
-      if (menu.style.display === 'block') {
-        menu.style.display = 'none';
-      } else {
-        menu.style.display = 'block';
-        menu.style.borderBottom = '1px solid #F3F3F3';
-        menu.style.padding = '10px ';
-      }
-    }
-  </script>
+  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."assets/php"; include($IPATH."headernav.html"); ?>
 
   <!-- racontez votre histoire -->
   <section class="section-racontez">
@@ -364,7 +315,7 @@ Parce que nous formons <a style="color: white;" href="Qui-sommes-nous.html">un c
   </section>
 
 
-  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."assets/php"; include($IPATH."footer.html"); ?>
+  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."public/assets/php"; include($IPATH."footer.html"); ?>
   <!-- <?php include './assets/php/footer.html'; ?> -->
 
 </body>
