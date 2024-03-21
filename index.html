@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."assets/php"; include($IPATH."headermeta.html"); ?>
+  <div id="headermeta-placeholder"></div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+  $(function(){
+      $("#headermeta-placeholder").load("public/assets/php/headermeta.html");
+  });
+  </script>
+  <!-- <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."assets/php"; include($IPATH."headermeta.html"); ?> -->
   <title>Créez une bande-dessinée avec des professionels.</title>
   <meta name="description" content="Spécialiste en création de bandes dessinées sur mesure, 
   notre équipe talentueuse propose des services artistiques uniques pour musées, entreprises et associations. 
@@ -11,7 +18,13 @@
 
 <body>
 
-  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."assets/php"; include($IPATH."headernav.html"); ?>
+  <div id="headernav-placeholder"></div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+  $(function(){
+      $("#headernav-placeholder").load("public/assets/php/headernav.html");
+  });
+  </script>
 
   <!-- racontez votre histoire -->
   <section class="section-racontez">
@@ -314,8 +327,14 @@ Parce que nous formons <a style="color: white;" href="Qui-sommes-nous.html">un c
       Découvrez nos albums <i class="fas fa-external-link-alt"></i></a></button></div>
   </section>
 
-
-  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."public/assets/php/"; include($IPATH."footer.html"); ?>
+  <div id="footer-placeholder"></div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+  $(function(){
+      $("#footer-placeholder").load("public/assets/php/footer.html");
+  });
+  </script>
+  <!-- <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."public/assets/php/"; include($IPATH."footer.html"); ?> -->
   <!-- <?php include './assets/php/footer.html'; ?> -->
 
 </body>
