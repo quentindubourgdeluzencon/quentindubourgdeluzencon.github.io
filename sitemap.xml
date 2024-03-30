@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://www.caseparcase.fr</loc>
+		<priority>1.00</priority>
+		<lastmod>2024-03-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.caseparcase.fr/qui-sommes-nous.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2024-02-27</lastmod>
+	</url>
+	<url>
+		<loc>https://www.caseparcase.fr/nos-travaux.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2024-02-27</lastmod>
+	</url>
+	<url>
+		<loc>https://www.caseparcase.fr/public/assets/php/headernav.html</loc>
+		<priority>0.20</priority>
+		<lastmod>2024-03-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.caseparcase.fr/public/assets/php/headermeta.html</loc>
+		<priority>0.20</priority>
+		<lastmod>2024-03-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.caseparcase.fr/public/assets/php/footer.html</loc>
+		<priority>0.20</priority>
+		<lastmod>2024-03-21</lastmod>
+	</url>
+</urlset>
