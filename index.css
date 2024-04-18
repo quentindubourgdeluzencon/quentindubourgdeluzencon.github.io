@@ -246,6 +246,92 @@ section.section-investissement .bouton-stylise{
     float: right;
   }
 }
+/* section autres investissements */
+
+section.section-autres .bouton-stylise{
+  margin:3rem auto 1rem auto;
+  display:block;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); /* Ombre avec 20% d'opacité */
+ }
+
+/* small screen */
+@media (max-width: 411px) {
+
+  section.section-autres .container-right,
+  section.section-autres .container-left {
+    display: block !important;
+  }
+
+  section.section-autres .text {
+    width: 100%;
+  }
+
+  section.section-autres .image {
+    width: 100%;
+    padding: 1rem;
+    
+    margin: 0 auto 1rem auto;
+  }
+
+  section.section-autres .image img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 749px) and (min-width: 411px) {
+
+  section.section-autres .container-right,
+  section.section-autres .container-left {
+    display: block !important;
+  }
+
+  section.section-autres .text {
+    width: 100%;
+  }
+
+  section.section-autres .image {
+     max-width: 70%;
+    width: 100%;
+    padding: 1rem;
+    
+    margin: 0 auto 1rem auto;
+  }
+
+  section.section-autres .image img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+/* large screen */
+@media (min-width: 750px) {
+  
+  section.section-autres .container-left {
+    flex-direction: row !important;
+  }
+  
+  section.section-autres .container-right {
+    flex-direction: row-reverse !important;
+  }
+
+  section.section-autres .text {
+    max-width: 800px;
+    width: 70%;
+  }
+
+  section.section-autres .image {
+    width: 430px;
+    max-width: 30%;
+  }
+
+  section.section-autres .image img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 330px;
+  }
+}
+
 
 /* section talents */
 
