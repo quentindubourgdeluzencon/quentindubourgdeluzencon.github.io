@@ -65,7 +65,7 @@ header .bouton-stylise{
  /* background: linear-gradient(to right, #4CB232, #64d847); Dégradé linéaire */
 }
 header .bouton-stylise:hover {
-  color: white; /* Couleur du texte */
+  color: #FFF39D; /* Couleur du texte */
 }
 
 #logo-cpc-green {
