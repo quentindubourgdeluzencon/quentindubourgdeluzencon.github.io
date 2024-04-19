@@ -43,7 +43,7 @@ header a:hover {
   font-family: Archivo, sans-serif;
   margin:1px;
   white-space: normal;
-  background: linear-gradient(to right, #FF164E, #FF9C27); /* Dégradé linéaire */
+  background: linear-gradient(to right, #FD9800, #EFC900); /* Dégradé linéaire */
   /* width : auto; */
   /* box-sizing: border-box; */
     display: inline-block;
@@ -103,7 +103,7 @@ nav a {
 section {
   font-family: Archivo, sans-serif;
   color: #242424;
-  margin: 1rem auto;
+  /* margin: 1rem auto; */
   padding: 2rem 0;
   overflow: hidden;
   display: block;
@@ -123,7 +123,7 @@ h1 {
   font-size: 4rem;
   font-weight: 900;
   line-height: 1.2;
-  color: #4cb232;
+  color: #1E4FFF;
   margin-bottom: 1rem;
 }
 
@@ -214,7 +214,7 @@ section.section-racontez .image img {
 /* section investissement */
 
 .section-investissement{
-  background-image: linear-gradient(to bottom right, #053B8C, #1D68D9); 
+  background-image: linear-gradient(to bottom right, #0032A6, #2869FF); 
   color: white;
 }
 
@@ -454,40 +454,71 @@ section.section-albums .bouton-stylise{
 
 }
 
-/* section pasbesoin */
+/* section idee */
 
-.section-pasbesoin{
-  background-image: linear-gradient(to right, #301400, #AE3E00); 
+.section-idee{
+  background-image: linear-gradient(to right bottom, #EC1ED7, #0045E7); 
   color: white;
   padding: 2rem 0;
 }
-.section-pasbesoin h3{
+.section-idee h3{
   color: white;
 }
-section.section-pasbesoin .text {
+section.section-idee .text {
   width: auto !important;
 }
 
-section.section-pasbesoin .image {
+section.section-idee .image {
   max-width: 240px;
   margin: auto;
 }
 
-section.section-pasbesoin .image img {
+section.section-idee .image img {
   width: 100%;
 }
-section.section-pasbesoin a.unstyled {
+section.section-idee a.unstyled {
   text-decoration: none;
   color: white;
 }
 
-section.section-pasbesoin img{
+section.section-idee img{
   color: white;
 
 }
 
 @media (min-width: 499px) {
-  section.section-pasbesoin .image {
+  section.section-idee .image {
+    max-width: unset;
+    width: 38%;
+    float: right;
+  }
+}
+
+/* section nos travaux */
+
+section.section-travaux .text {
+  width: auto !important;
+}
+
+section.section-travaux .image {
+  max-width: 240px;
+  margin: auto;
+}
+
+section.section-travaux .image img {
+  width: 100%;
+}
+
+section.section-travaux .bouton-stylise{
+  margin:3rem auto auto auto;
+    display:block;
+  /* box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.30); Ombre avec 20% d'opacité */
+  /* background: linear-gradient(to right, #065BDD, #0BB6FF); Dégradé linéaire */
+}
+
+
+@media (min-width: 499px) {
+  section.section-travaux .image {
     max-width: unset;
     width: 38%;
     float: right;
