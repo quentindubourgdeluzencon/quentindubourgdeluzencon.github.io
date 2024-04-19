@@ -71,6 +71,9 @@ header .bouton-stylise:hover {
 #logo-cpc-end {
   height: 8rem;
 }
+#logo-cpc {
+  height: 5rem;
+}
 
 nav ul {
   list-style: none;
