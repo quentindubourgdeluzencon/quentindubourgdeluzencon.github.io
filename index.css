@@ -68,10 +68,6 @@ header .bouton-stylise:hover {
   color: #FFF39D; /* Couleur du texte */
 }
 
-#logo-cpc-green {
-  height: 5rem;
-}
-
 #logo-cpc-end {
   height: 8rem;
 }
@@ -178,7 +174,7 @@ h4 {
     margin-bottom: 1rem;
   }
 
-  #logo-cpc-green {
+  #logo-cpc {
     height: 3rem;
   }
 
